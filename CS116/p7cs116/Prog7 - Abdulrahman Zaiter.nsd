@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="http://structorizer.fisch.lu/" text="&#34;Prog7 - Abdulrahman Zaiter&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;output(&#34;&#34;*~~&#60; Stud Quiz Report &#62;~~*&#34;&#34;)&#34;,&#34;output(&#34;&#34;Stud Id&#34;&#34;,&#34;&#34;AVG of Quizzes&#34;&#34;)&#34;,&#34;recordCount &#60;- 0 studCount &#60;- 0&#34;,&#34;input(studId) input(numOfQuiz)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<while text="&#34;While There is Data Do&#34;" comment="&#34;&#34;" color="ffffff">
+			<qWhile>
+				<instruction text="&#34;tempCount &#60;- 0 tempSumScore &#60;- 0&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<alternative text="&#34;Is numOfQuiz &#62; 0 ?&#34;" comment="&#34;&#34;" color="ffffff">
+					<qTrue>
+						<instruction text="&#34;recordCount = recordCount + 1&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+					</qTrue>
+					<qFalse>
+					</qFalse>
+				</alternative>
+				<instruction text="&#34;studCount = studCount + 1&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<while text="&#34;While (numOfQuiz &#62; 0) Do&#34;" comment="&#34;&#34;" color="ffffff">
+					<qWhile>
+						<instruction text="&#34;input(quizScore)&#34;,&#34;numOfQuiz = numOfQuiz - 1&#34;,&#34;quizCount = quizCount + 1&#34;,&#34;tempCount = tempCount + 1&#34;,&#34;tempSumScore = tempSumScore + quizScore&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+					</qWhile>
+				</while>
+				<instruction text="&#34;output(studId)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<alternative text="&#34;Is tempCount &#62; 0 ?&#34;" comment="&#34;&#34;" color="ffffff">
+					<qTrue>
+						<instruction text="&#34;quizAvg &#60;- tempSumScore/tempCount&#34;,&#34;auizAvgSum &#60;- quizAvgSum + quizAvg&#34;,&#34;output(quizAvg)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+					</qTrue>
+					<qFalse>
+						<instruction text="&#34;output(&#34;&#34;No Quizzes&#34;&#34;)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+					</qFalse>
+				</alternative>
+				<instruction text="&#34;input(studId) input(numOfQuiz)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qWhile>
+		</while>
+		<alternative text="&#34;Is recordCount &#62; 0 ?&#34;" comment="&#34;&#34;" color="ffffff">
+			<qTrue>
+				<instruction text="&#34;avgMean &#60;- quizAvgSum/recordCount&#34;,&#34;output(&#34;&#34;&#62;&#62;&#62;Mean of AVG of Quizzes: &#34;&#34;, avgMean)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qTrue>
+			<qFalse>
+				<instruction text="&#34;output(&#34;&#34;There is enough data to calculate the Mean&#34;&#34;)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qFalse>
+		</alternative>
+		<instruction text="&#34;output(&#34;&#34;&#62;&#62;&#62;There were &#34;&#34;, studCount, &#34;&#34; students &amp; &#34;&#34;, quizCount, &#34;&#34; quizzes in file.&#34;&#34;)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+	</children>
+</root>

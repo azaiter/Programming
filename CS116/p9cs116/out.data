@@ -1,0 +1,8 @@
+*~~< Stud Exam Report >~~*
+Name                Stud Id   Sex       Exam 1    Exam 2    Exam 3         AVG of Exams   Grade
+----                -------   ---       ------    ------    ------         ------------   -----
+Rom,Jeen            7777      M         100.00    0.00      -1.00          ~~ Invalid data ~~
+
+No Valid students data in file to evaluate grade distribution chart, male and female percentage and top exam and avg perfomance.
+
+*< end >*

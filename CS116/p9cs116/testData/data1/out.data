@@ -1,0 +1,24 @@
+*~~< Stud Exam Report >~~*
+Name                Stud Id   Sex       Exam 1    Exam 2    Exam 3         AVG of Exams   Grade
+----                -------   ---       ------    ------    ------         ------------   -----
+Last1,First1        1234      M         100.00    100.00    100.00         100            A
+Last2,First2        2235      M         89.00     80.00     80.00          83             B
+Last3,First3        4236      M         70.00     79.00     74.00          75             C
+Last4,First4        5237      F         60.00     69.00     65.00          65             D
+Last5,First5        6238      F         9.00      59.00     50.00          40             F
+Last6,First6        7239      F         50.00     60.00     91.00          67             D
+
+Grade Destitution Bar Chart
+A|****
+B|****
+C|****
+D|********
+F|****
+
+>> Female: 50.00%
+>> Male: 50.00%
+
+>> The top exam performance for this semester  is: 100.00%
+>> The top avg of exams is for student with ID 1234 & avg was 100%
+
+*< end >*

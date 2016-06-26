@@ -1,0 +1,11 @@
+*< Sample of C++ Library Mathematical Functions >*
+
+Square root of 10.0  = 3.162
+Natural logarithm 10.0 = 2.303
+Absolute value of -2 * 10.0 = 20.000
+Ceiling value of 8.123 = 9.000
+Floor value of 8.123 = 8.000
+3.0 raised to power 2.2 = 11.212
+Squar root of pwr(3.0, 3.0) = 5.196
+
+~~< end >~~

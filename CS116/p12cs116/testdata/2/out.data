@@ -1,0 +1,42 @@
+*--< Stud Exam Report >--*
+
+~ Sorted GPA Low  to High ~
+2.00
+2.01
+2.34
+2.50
+3.00
+3.45
+3.55
+3.67
+3.89
+4.00
+<- end ->
+
+~ Sorted GPA High to Low ~
+4.00
+3.89
+3.67
+3.55
+3.45
+3.00
+2.50
+2.34
+2.01
+2.00
+<- end ->
+
+~ Student with GPA >= 3.50 ~
+3.55
+3.67
+3.89
+4.00
+<- end ->
+
+~ Can't Find Students with GPA < 2.00 !!
+
+~MAX GPA: 4.00
+~MIN  GPA: 2.00
+~Mean of GPA: 3.04
+
+***< end >***

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="http://structorizer.fisch.lu/" text="&#34;printHeading()&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;output(&#34;&#34;*~~&#60; Stud Exam Report &#62;~~*&#34;&#34;)&#34;,&#34;output(&#34;&#34;Name&#34;&#34;,&#34;&#34;Stud Id&#34;&#34;, &#34;&#34;Exam 1&#34;&#34;, &#34;&#34;Exam 2&#34;&#34;, &#34;&#34;Exam 3&#34;&#34;, &#34;&#34;AVG of Exams&#34;&#34;, &#34;&#34;Passed/Failed&#34;&#34;)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+	</children>
+</root>

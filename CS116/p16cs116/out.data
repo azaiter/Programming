@@ -1,0 +1,10 @@
+*~< Student Exam Report >~*
+ID        Exam1     Exam2     Exam3          Max       Min       AVG       P/F       
+100       101.00    -1.00     103.00         ~~ Invalid data! ~~
+
+*** Num of valid data = 0
+*** Num of invalid data = 1
+
+There is no Valid data to count P and F
+
+*< end >*

@@ -1,0 +1,26 @@
+<<<*** Unsorted Data ***>>>
+N  a  m  e		E x m e
+----------		-------
+York, Pat		77.54
+Wood, Woody		73.67
+Chang, Lou		78.89
+Hart, Joe		81.53
+Hamilton, Kay		84.65
+Clark, Mary		92.78
+Cornejo, Jean		94.72
+Hart, Joee		79.82
+Pan, Eric		65.65
+Ricardo, Mark		77.88
+<<<*** Sorted Data ***>>>
+N  a  m  e		E x m e
+----------		-------
+Chang, Lou		78.89
+Clark, Mary		92.78
+Cornejo, Jean		94.72
+Hamilton, Kay		84.65
+Hart, Joe		81.53
+Hart, Joee		79.82
+Pan, Eric		65.65
+Ricardo, Mark		77.88
+Wood, Woody		73.67
+York, Pat		77.54

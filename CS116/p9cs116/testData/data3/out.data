@@ -1,0 +1,30 @@
+*~~< Stud Exam Report >~~*
+Name                Stud Id   Sex       Exam 1    Exam 2    Exam 3         AVG of Exams   Grade
+----                -------   ---       ------    ------    ------         ------------   -----
+Last1,First1        1234      M         65.00     66.00     67.00          66             D
+Last2,First2        5678      M         0.00      0.00      0.00           0              F
+Last3,First3        9012      M         75.00     77.00     79.00          77             C
+Last4,First4        3456      M         99.00     95.00     92.00          96             A
+Last5,First5        7890      F         77.00     0.00      100.00         59             F
+Last6,First6        4321      M         50.00     60.00     70.00          60             D
+Last7,First7        123       M         16.00     100.00    15.00          ~~ Invalid data ~~
+Last8,First8        1212      N         12.00     90.00     89.00          ~~ Invalid data ~~
+Last10,First10      1313      M         -1.00     59.00     48.00          ~~ Invalid data ~~
+Last11,First11      1414      F         97.00     101.00    66.00          ~~ Invalid data ~~
+Last12,First12      -1        T         234.00    567.00    890.00         ~~ Invalid data ~~
+Last13,First13      9876      7         0.00      70.00     71.00          ~~ Invalid data ~~
+
+Grade Destitution Bar Chart
+A|****
+B|
+C|****
+D|********
+F|********
+
+>> Female: 16.67%
+>> Male: 83.33%
+
+>> The top exam performance for this semester  is: 100.00%
+>> The top avg of exams is for student with ID 3456 & avg was 96%
+
+*< end >*

@@ -1,0 +1,12 @@
+Void and Value-Returning Functions
+----------------------------------
+num1: 40
+num2: 80
+
+Print num1 & num2 after swapping:
+num1: 40
+num2: 40
+
+MAX of num1 & num2 is: 80
+
+~ end ~ 

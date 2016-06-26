@@ -1,0 +1,47 @@
+*~~< Stud Exam Report Unsorted>~~*
+Name                Stud Id   Sex       Exam 1    Exam 2    Exam 3         AVG of Exams   Grade
+----                -------   ---       ------    ------    ------         ------------   -----
+Lewis,Lee           1111      M         70.00     70.00     70.00          70             OK
+Nelson,James        2222      M         0.00      0.00      0.00           0              FAILING
+Nelson,Lori         3333      F         99.00     98.00     88.00          95             EXCELLENT
+Robbyee,Rob         2399      M         87.00     88.00     85.00          87             GOOD
+Rom,Jeen            1982      F         66.00     67.00     68.00          67             WEAK
+Sool,Rod            5555      M         90.00     88.00     91.00          90             EXCELLENT
+Lewis,Lee           2276      M         77.00     88.00     79.00          82             GOOD
+Rom,Jeen            7777      M         88.00     76.00     92.00          86             GOOD
+Booboom,Rom         4532      F         88.00     66.00     81.00          79             OK
+Dooloop,Loop        8921      F         77.00     81.00     83.00          81             GOOD
+< end >
+
+*~~< Stud Exam Report Sorted By Id>~~*
+Name                Stud Id   Sex       Exam 1    Exam 2    Exam 3         AVG of Exams   Grade
+----                -------   ---       ------    ------    ------         ------------   -----
+Lewis,Lee           1111      M         70.00     70.00     70.00          70             OK
+Rom,Jeen            1982      F         66.00     67.00     68.00          67             WEAK
+Nelson,James        2222      M         0.00      0.00      0.00           0              FAILING
+Lewis,Lee           2276      M         77.00     88.00     79.00          82             GOOD
+Robbyee,Rob         2399      M         87.00     88.00     85.00          87             GOOD
+Nelson,Lori         3333      F         99.00     98.00     88.00          95             EXCELLENT
+Booboom,Rom         4532      F         88.00     66.00     81.00          79             OK
+Sool,Rod            5555      M         90.00     88.00     91.00          90             EXCELLENT
+Rom,Jeen            7777      M         88.00     76.00     92.00          86             GOOD
+Dooloop,Loop        8921      F         77.00     81.00     83.00          81             GOOD
+< end >
+
+*~~< Searching From Exam Report >~~*
+Name                Stud Id   Sex       Exam 1    Exam 2    Exam 3         AVG of Exams   Grade
+----                -------   ---       ------    ------    ------         ------------   -----
+Rom,Jeen            7777      M         88.00     76.00     92.00          86             GOOD
+Sool,Rod            5555      M         90.00     88.00     91.00          90             EXCELLENT
+Nelson,James        2222      M         0.00      0.00      0.00           0              FAILING
+**Student with id: 9000 Not found!
+**Student with id: 1234 Not found!
+Robbyee,Rob         2399      M         87.00     88.00     85.00          87             GOOD
+**Student with id: 4321 Not found!
+
+>> Mean of all AVG: 73.70
+
+>> Male: %60.00
+>> Female: %40.00
+
+*< end >*

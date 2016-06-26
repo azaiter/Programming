@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="http://structorizer.fisch.lu/" text="&#34;printNoValidMeanMsg()&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;output(&#34;&#34;There is no valid data to calculate the Mean of the AVG for it !&#34;&#34;)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+	</children>
+</root>

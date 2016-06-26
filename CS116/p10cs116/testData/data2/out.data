@@ -1,0 +1,18 @@
+*~~< Stud Exam Report >~~*
+Name	Stud Id	Sex	Exam 1	Exam 2	Exam 3	AVG of Exams	Grade
+Last,First	1234	M	50.00	60.00	70.00	60	WEAK
+
+Bar chart for Performance
+-------------------------
+EXCELLENT	|
+GOOD	|
+OK	|
+WEAK	|***
+FAILING	|
+
+>> Mean of all AVG: 60.00
+
+>>% of Valid: 100.00
+>>% of Invalid: 0.00
+
+*< end >*

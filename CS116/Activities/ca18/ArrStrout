@@ -1,0 +1,22 @@
+*~~< Student Grade Report >~~*
+
+Stud Id       Sex
+-------       ---
+111           M
+123           F
+444           M
+559           M
+666           F
+767           F
+821           M
+876           F
+876           M
+999           F
+
+Number of Female: 5
+
+Student with id: 111 Sex is: M
+Student with id: 999 Sex is: F
+Student with id: 5876 Not found!
+
+*< end >*

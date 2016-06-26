@@ -1,0 +1,28 @@
+*~~< Stud Exam Report >~~*
+Name	Stud Id	Sex	Exam 1	Exam 2	Exam 3	AVG of Exams	Grade
+Last1,First1	1234	M	65.00	66.00	67.00	66	WEAK
+Last2,First2	5678	M	0.00	0.00	0.00	0	FAILING
+Last3,First3	9012	M	75.00	77.00	79.00	77	OK
+Last4,First4	3456	M	99.00	95.00	92.00	96	EXCELLENT
+Last5,First5	7890	F	77.00	0.00	100.00	59	FAILING
+Last6,First6	4321	M	50.00	60.00	70.00	60	WEAK
+Last7,First7	123	M	16.00	100.00	15.00	~~ Invalid data ~~
+Last8,First8	1212	N	12.00	90.00	89.00	~~ Invalid data ~~
+Last10,First10	1313	M	-1.00	59.00	48.00	~~ Invalid data ~~
+Last11,First11	1414	F	97.00	101.00	66.00	~~ Invalid data ~~
+Last12,First12	-1	T	234.00	567.00	890.00	~~ Invalid data ~~
+Last13,First13	9876	7	0.00	70.00	71.00	~~ Invalid data ~~
+
+Bar chart for Performance
+EXCELLENT	|***
+GOOD	|
+OK	|***
+WEAK	|******
+FAILING	|******
+
+>> Mean of all AVG: 59.67
+
+>>% of Valid: 50.00
+>>% of Invalid: 50.00
+
+*< end >*

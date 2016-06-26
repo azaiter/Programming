@@ -1,0 +1,11 @@
+*~~< Stud Exam Report >~~*
+Name                Stud Id   Exam 1    Exam 2    Exam 3         AVG of Exams   Passed/Failed
+----                -------   ------    ------    ------         ------------   -------------
+Rom,Jeen            1110      100.00    100.00    100.00         ~~ Invalid data~~
+Lopez,jj            11001     101.00    102.00    103.00         ~~ Invalid data~~
+Loop,If             1234      -100.00   101.00    100.00         ~~ Invalid data~~
+
+There is no valid data to calculate the Mean of the AVG for it !
+
+
+*< end >*

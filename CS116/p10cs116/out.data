@@ -1,0 +1,11 @@
+*~~< Stud Exam Report >~~*
+Name                Stud Id   Sex       Exam 1    Exam 2    Exam 3         AVG of Exams   Grade
+----                -------   ---       ------    ------    ------         ------------   -----
+Last,First          1234      C         50.00     50.00     50.00          ~~ Invalid data ~~
+
+No Valid students data in file to evaluate performance bar chart and the mean of all AVG!
+
+>>% of Valid: 0.00
+>>% of Invalid: 100.00
+
+*< end >*

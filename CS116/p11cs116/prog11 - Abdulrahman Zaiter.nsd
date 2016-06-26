@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="http://structorizer.fisch.lu/" text="&#34;prog11 - Abdulrahman Zaiter&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;EXAM_MAX &#60;- 100.00 EXAM_MIN &#60;- 0.00 ID_MAX &#60;- 9999 ID_MIN &#60;- 1111 MALE_ID &#60;- 'M' FEMALE_ID &#60;- 'F'&#34;,&#34;EXCELLENT_MAX &#60;- 100 EXCELLENT_MIN &#60;- 90 GOOD_MAX &#60;- 89 GOOD_MIN &#60;- 80 OK_MAX &#60;- 79 OK_MIN &#60;- 70&#34;,&#34;WEAK_MAX &#60;- 69 WEAK_MIN &#60;- 60 FAILING_MAX &#60;- 59 FAILING_MIN &#60;- 0 studCnt &#60;- 0 examAvgSum &#60;- 0 invalidCnt &#60;- 0&#34;,&#34;cntExcellent &#60;- 0 cntGood &#60;- 0 cntOk &#60;- 0 cntWeak &#60;- 0 cntFailing &#60;- 0 maleCnt &#60;-0 femaleCnt &#60;- 0&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<call text="&#34;printHeading()&#34;" comment="" color="ffffff"></call>
+		<call text="&#34;readRd(studData)&#34;" comment="&#34;&#34;" color="ffffff"></call>
+		<while text="&#34;WHILE There is data DO&#34;" comment="" color="ffffff">
+			<qWhile>
+				<call text="&#34;printRd(studData)&#34;" comment="&#34;&#34;" color="ffffff"></call>
+				<alternative text="&#34;IS (validData(studData)) ?&#34;" comment="&#34;&#34;" color="ffffff">
+					<qTrue>
+						<instruction text="&#34;examAvg &#60;- avg(studData)&#34;,&#34;studCnt &#60;- studCnt + 1&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+						<alternative text="&#34;IS (studData.sex = MALE_ID) ?&#34;" comment="&#34;&#34;" color="ffffff">
+							<qTrue>
+								<instruction text="&#34;maleCnt &#60;- maleCnt + 1&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+							</qTrue>
+							<qFalse>
+								<instruction text="&#34;femaleCnt &#60;- femaleCnt + 1&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+							</qFalse>
+						</alternative>
+						<instruction text="&#34;studGrade &#60;- grade(examAvg)&#34;" comment="" color="ffffff" rotated="0"></instruction>
+						<call text="&#34;countGrades(studGrade, cntExcellent, cntGood, cntOk, cntWeak, cntFailing)&#34;" comment="" color="ffffff"></call>
+						<instruction text="&#34;examAvgSum &#60;- examAvgSum + examAvg&#34;" comment="" color="ffffff" rotated="0"></instruction>
+						<call text="&#34;printAvgAndGrade(examAvg, studGrade)&#34;" comment="" color="ffffff"></call>
+					</qTrue>
+					<qFalse>
+						<call text="&#34;printInvalidDataMsg()&#34;" comment="" color="ffffff"></call>
+						<instruction text="&#34;invalidCnt &#60;- invalidCnt + 1&#34;" comment="" color="ffffff" rotated="0"></instruction>
+					</qFalse>
+				</alternative>
+				<call text="&#34;readRd(studName, studId, exam1, exam2, exam3)&#34;" comment="" color="ffffff"></call>
+			</qWhile>
+		</while>
+		<alternative text="&#34;Is studCnt &#62; 0&#34;" comment="" color="ffffff">
+			<qTrue>
+				<call text="&#34;maleAndFemalePrec(studCnt, maleCnt, femaleCnt, malePerc, femalePerc)&#34;" comment="&#34;&#34;" color="ffffff"></call>
+				<call text="&#34;printBarChart(studCnt, cntExcellent, cntGood, cntOk, cntWeak, cntFailing)&#34;" comment="" color="ffffff"></call>
+				<call text="&#34;printMeanOfAllAvg(examAvgSum, studCnt)&#34;" comment="" color="ffffff"></call>
+				<call text="&#34;printPrec(malePerc, femalePerc)&#34;" comment="&#34;&#34;" color="ffffff"></call>
+				<call text="&#34;printValidInvalidPerc(invalidCnt, studCnt)&#34;" comment="" color="ffffff"></call>
+			</qTrue>
+			<qFalse>
+				<call text="&#34;printNoValidData()&#34;" comment="" color="ffffff"></call>
+				<call text="&#34;printValidInvalidPerc(invalidCnt, studCnt)&#34;" comment="" color="ffffff"></call>
+			</qFalse>
+		</alternative>
+		<instruction text="&#34;output(&#34;&#34;*&#60; end &#62;*&#34;&#34;)&#34;" comment="" color="ffffff" rotated="0"></instruction>
+	</children>
+</root>

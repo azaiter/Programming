@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="http://structorizer.fisch.lu/" text="&#34;Prog4 - Abdulrahman Zaiter&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;input(studentId)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;input(studentName)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;input(studentSex)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;input(examFirst)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;input(examSecond)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;input(examThird)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;examAvg &#60;- (examFirst + examSecond + examThird)/3&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;print(&#34;&#34;~*&#60; Exam AVG Report &#62;*~&#34;&#34;)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;print(&#34;&#34;Name: &#34;&#34;, studentName, &#34;&#34; Id: &#34;&#34;, studentId, &#34;&#34;    Sex: &#34;&#34;, studentSex)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;print(&#34;&#34;Exam1 = &#34;&#34;, examFirst)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;print(&#34;&#34;Exam2 = &#34;&#34;, examSecond)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;print(&#34;&#34;Exam3 = &#34;&#34;, examThird)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;print(&#34;&#34;AVG of Three Exams= &#34;&#34;, examAvg)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;print(&#34;&#34;~ end ~&#34;&#34;)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+	</children>
+</root>
