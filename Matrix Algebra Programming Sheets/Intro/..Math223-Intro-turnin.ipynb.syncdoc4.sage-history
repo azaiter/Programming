@@ -1,0 +1,410 @@
+"{\"notebook_name\":\"Math223-Intro-turnin.ipynb\"}\n\"# Math 223 Intro Homework\"︡{\"metadata\":{\"collapsed\":false},\"cell_type\":\"markdown\"}\n\"Welcome to Math 223.  In this course, we will be using the Julia language to do some matrix and vector calcuations. One of the easiest ways to use Julia is through a Jupyter notebook interface.  What you are just reading is an example of a Jupyter notebook.  A Jupyter notebook lets you combine rich text (entered in a version of the _markdown_ syntax) with math formulas (entered in the $\\\\LaTeX$ syntax) and calculations in a supported programming language, in this case Julia.\"︡{\"metadata\":{},\"cell_type\":\"markdown\"}\n\"__For example:__ Suppose we wanted to find an approximation to the number $$7 + \\\\frac{\\\\sqrt{13}}{5}$$ using Julia:\"︡{\"metadata\":{},\"cell_type\":\"markdown\"}\n\"7 + sqrt(13)/5\"︡{\"metadata\":{\"collapsed\":false,\"trusted\":false},\"cell_type\":\"code\",\"execution_count\":1,\"outputs\":[{\"execution_count\":1,\"output_type\":\"execute_result\",\"data\":{\"text/plain\":\"7.721110255092798\"},\"metadata\":{}}]}\n\"Or we may want to find the 100th partial sum of the harmonic series: $$s_{100} = \\\\sum_{i=1}^{100} \\\\frac{1}{i}$$ using a simple loop: \"︡{\"metadata\":{},\"cell_type\":\"markdown\"}\n\"n = 100\\ns = 0\\n\\nfor i = 1:n\\n    s += 1/i\\nend\\n\\nprint(s)\"︡{\"metadata\":{\"collapsed\":false,\"trusted\":true},\"cell_type\":\"code\",\"execution_count\":2,\"outputs\":[{\"output_type\":\"stream\",\"text\":\"5.187377517639621\",\"name\":\"stdout\"}]}\n\"As you can see, a Jupyter notebook will let us do computations using a programming language, display the results of the computations, a explain the computation in a nice easy to read way, all in one document, all that in your browser.\"︡{\"metadata\":{},\"cell_type\":\"markdown\"}\n\"Not only that, but the notebook is fully interactive, which means that somebody reading a notebook can make changes and the changes will be reflected in the displayed text and the cresults of the computation.\\n\\nTry it now -- by following these steps, you will change the notebook so it will calculate the 200th partial sum, rather than 100th partial sum:\\n\\n1.   First double click on the summation formula for $s_{100}$ above.  It will change the text so you will be able to edit it.  Carefully edit the text so that every occurence of 100 will become 200.  Make sure you do not change anything else, unless you know what you are doing (if you know _markdown_ and $\\\\LaTeX$ syntax, you may want to experiment more). Then press <kbd>Shift</kbd>-<kbd>Enter</kbd> to turn the text back to it's typeset form, this time with 100's replaced by 200's. \\n\\n    Note that this was not strictly necessary.  So far you did not change any actual computation, you only edited a description of the computation. It is a good idea, however, to always edit your descriptions every time you do any changes to the computation, so that the descriptions actually correspond well to what is going on in the computation.  By following this advice, you will avoid looking at your notebooks couple months later and scratching your had in confusion, trying to figure out what in the world is going on there.\\n    \\n2.   Now you will change the actual computation. In the part of the notebook where the sum is actually being computed, change the line that says `n = 100` so it will say `n = 200` instead.  Press <kbd>Shift</kbd>-<kbd>Enter</kbd> again and see that the result updates accordingly.  \\n\\n     An interesting thing is that you will actually not see a lot of difference! The sum will change from about 5.2 to about 5.8.  Even though the harmonic series is divergent, it diverges so slowly that adding 100 more terms barely changes the partial sum!\"︡{\"metadata\":{},\"cell_type\":\"markdown\"}\n\"### Some explanation\\n\\nTo better understand what is going on, it is important to know that a Jupyter notebook consists of a series of so called _cells_. There are two main types of cells:\\n\\n*  __Code cells__, that contain a code in a supported programming language.  When you press <kbd>Shift</kbd>-<kbd>Enter</kbd>, the cell is executed, and its output is inserted into the notebook directly underneeth.  The output can be of various kind, for example it could be a printed text, or it could be an image, such as a plot or a diagram.\\n\\n*  __Markdown cells__, that contain text formatted in a dialect of _Markdown_. When you press <kbd>Shift</kbd>-<kbd>Enter</kbd>, the cell is _rendered_, shown in a nicely typeset form.  Double clicking on a rendered cell turns it back into the original markdown source, so you can edit it again.\\n\\nThere are some other types, but we do not need to worry about them.\\n\\nTo change a type of a cell, you can use the menu: Cell -> Type -> ..., or you can use keyboard shortcuts.  Look in the menu under Help -> Keyboard shortcuts to learn about those.\"︡{\"metadata\":{\"collapsed\":true,\"trusted\":false},\"cell_type\":\"markdown\"}\n\"### _Markdown_ and $\\\\LaTeX$\\n\\nThere is a nice summary of _Markdown_ syntax at [Daring Fireball: Markdown Syntax Documentation](https://daringfireball.net/projects/markdown/syntax).  There are several slightly incompatible versions of _Markdown_ in the wild, but the differences are small, and with a bit of experiemnting you should be able to figure out the one you need.\\n\\nTo enter math formulas in _Markdown_, you use so called $\\\\LaTeX$ (or, when typed in a sane way, LaTeX).  It is a de-facto standard way of entering math formulas on the web and in the math literature. There is a huge numbers of LaTeX tutorials on the web, but most of them deal with the full $\\\\LaTeX$ system, designed for typesetting complete mathematical documents such as articles or books.  For our purposes we just need to learn a subset of LaTeX that will let us type formulas into the nonotebooks. There is a simple summary at the [Wiki MathJax Syntax](http://www.suluclac.com/Wiki+MathJax+Syntax) page at `suluclac.com`.\"︡{\"metadata\":{},\"cell_type\":\"markdown\"}\n\"## Your actual homework\\n\\nNow the most important thing: what are you expected to do on this homework assignment:\\n\\nI want you to just experiment with this notebook.  You can edit the cells above, but I want you to try to enter some new cells below.  Create some code cells with simple calculations, such as $1 + 1$, experiment with other calculations in Julia, create some markdown cells and try to use some _Markdown_ formatting, or perhaps even a $\\\\LaTeX$ formula or two.  I will give few bonus points if I see something cool.\\n\\nImportant thing: __do not rename the notebook__.  When I collect the homework next week, I will expect it to be in this notebook, so if you rename it, I will not see it!\\n\\nThe deadline for the homework is on Tuesday, January 19, at 8 in the morning.\\n\\nPlease [let me know](mailto:jhlavace@svsu.edu) if you have any questions or need help.\"︡{\"metadata\":{},\"cell_type\":\"markdown\"}\n\"<p style=\\\"text-align:center\\\"><img src=\\\"http://www.ruslana-decor.com/assets/hatter/transparent%20scroll%20line.png\\\"/></p>\\n\\n# My Submission For This Assignment : #\\n\\n## Starting up with a quote that I liked ## \\n> <font color=\\\"blue\\\"><b> \\\"The difference between the poet and the mathematician is that the poet tries to get his head into the heavens while the mathematician tries to get the heavens into his head.”</b></font> ― G.K. Chesterton\\n\\n## Matrices Demonistration ##\\n\\n#### _Note: Matrices are taken from in class examples._\\n\\n### <font color=\\\"green\\\"> A =  $\\\\begin{bmatrix} 1 & 1 & 1 \\\\\\\\ 9 & 3 & 1 \\\\\\\\ 25 & 5 & 1 \\\\end{bmatrix}$ </font> ###\"︡{\"metadata\":{},\"cell_type\":\"markdown\"}\n\"A = [1 1 1 \\n     9 3 1\\n     25 5 1]\"︡{\"metadata\":{\"trusted\":true,\"collapsed\":true},\"cell_type\":\"code\",\"execution_count\":null,\"outputs\":[]}\n\"### <font color=\\\"grey\\\"> B =  $\\\\begin{bmatrix} -4 \\\\\\\\ -2 \\\\\\\\ 8 \\\\end{bmatrix}$ </font> ###\"︡{\"metadata\":{},\"cell_type\":\"markdown\"}\n\"B = [-4;-2;8]\"︡{\"metadata\":{\"trusted\":true,\"collapsed\":true},\"cell_type\":\"code\",\"execution_count\":null,\"outputs\":[]}\n\"### And A\\\\B is going to be :\"︡{\"metadata\":{\"trusted\":true,\"collapsed\":false},\"cell_type\":\"markdown\"}\n\"A\\\\B\"︡{\"metadata\":{\"trusted\":true,\"collapsed\":false,\"scrolled\":true},\"cell_type\":\"code\",\"execution_count\":6,\"outputs\":[{\"output_type\":\"execute_result\",\"data\":{\"text/plain\":\"3-element Array{Float64,1}:\\n  1.0\\n -3.0\\n -2.0\"},\"metadata\":{},\"execution_count\":6}]}\n\"## Loop demonistration:\\n\\n### Outputting prime numbers between two numbers.\\n\"︡{\"metadata\":{},\"cell_type\":\"markdown\"}\n\"## code logic taken from c++ function with some edits\\nstart = 1 #start\\nending = 120 #end\\n\\nfor i = start:ending\\n    counter = 0\\n    for i2 = 1:i\\n        if i%i2 == 0\\n            counter = counter + 1 \\n        end\\n    end\\n    if counter == 2\\n        println(i,\\\" is prime\\\") \\n    end\\nend\"︡{\"metadata\":{\"trusted\":true,\"collapsed\":false},\"cell_type\":\"code\",\"execution_count\":11,\"outputs\":[{\"output_type\":\"stream\",\"text\":\"2 is prime\\n3 is prime\\n5 is prime\\n7 is prime\\n11 is prime\\n13 is prime\\n17 is prime\\n19 is prime\\n23 is prime\\n29 is prime\\n31 is prime\\n37 is prime\\n41 is prime\\n43 is prime\\n47 is prime\\n53 is prime\\n59 is prime\\n61 is prime\\n67 is prime\\n71 is prime\\n73 is prime\\n79 is prime\\n83 is prime\\n89 is prime\\n97 is prime\\n101 is prime\\n103 is prime\\n107 is prime\\n109 is prime\\n113 is prime\\n\",\"name\":\"stdout\"}]}\n\"<center>&copy; Abdulrahman Zaiter 2016</center>\\n<p style=\\\"text-align:center\\\"><img src=\\\"http://www.ruslana-decor.com/assets/hatter/transparent%20scroll%20line.png\\\"/></p>\"︡{\"metadata\":{},\"cell_type\":\"markdown\"}"
+{"patch":[[[[0,"count\":1"],[-1,"1"],[1,"0"],[0,",\"output"]],8786,8786,17,17],[[[0,"is prime"],[1," "],[0,"\\n3 is p"]],8841,8841,16,17],[[[0,"is prime"],[1," "],[0,"\\n5 is p"]],8854,8854,16,17],[[[0,"is prime"],[1," "],[0,"\\n7 is p"]],8867,8867,16,17],[[[0,"\\n7 is prime"],[1," "],[0,"\\n11 is prim"]],8876,8876,24,25],[[[0,"is prime"],[1," "],[0,"\\n13 is "]],8894,8894,16,17],[[[0,"is prime"],[1," "],[0,"\\n17 is "]],8908,8908,16,17],[[[0,"is prime"],[1," "],[0,"\\n19 is "]],8922,8922,16,17],[[[0,"is prime"],[1," "],[0,"\\n23 is "]],8936,8936,16,17],[[[0,"is prime"],[1," "],[0,"\\n29 is "]],8950,8950,16,17],[[[0,"is prime"],[1," "],[0,"\\n31 is "]],8964,8964,16,17],[[[0,"is prime"],[1," "],[0,"\\n37 is "]],8978,8978,16,17],[[[0,"is prime"],[1," "],[0,"\\n41 is "]],8992,8992,16,17],[[[0,"is prime"],[1," "],[0,"\\n43 is "]],9006,9006,16,17],[[[0,"is prime"],[1," "],[0,"\\n47 is "]],9020,9020,16,17],[[[0,"is prime"],[1," "],[0,"\\n53 is "]],9034,9034,16,17],[[[0,"is prime"],[1," "],[0,"\\n59 is "]],9048,9048,16,17],[[[0,"is prime"],[1," "],[0,"\\n61 is "]],9062,9062,16,17],[[[0,"is prime"],[1," "],[0,"\\n67 is "]],9076,9076,16,17],[[[0,"is prime"],[1," "],[0,"\\n71 is "]],9090,9090,16,17],[[[0,"is prime"],[1," "],[0,"\\n73 is "]],9104,9104,16,17],[[[0,"is prime"],[1," "],[0,"\\n79 is "]],9118,9118,16,17],[[[0,"is prime"],[1," "],[0,"\\n83 is "]],9132,9132,16,17],[[[0,"is prime"],[1," "],[0,"\\n89 is "]],9146,9146,16,17],[[[0,"is prime"],[1," "],[0,"\\n97 is "]],9160,9160,16,17],[[[0,"n97 is prime"],[1," "],[0,"\\n101 is pri"]],9170,9170,24,25],[[[0,"101 is prime"],[1," "],[0,"\\n103 is pri"]],9185,9185,24,25],[[[0,"103 is prime"],[1," "],[0,"\\n107 is pri"]],9200,9200,24,25],[[[0,"is prime"],[1," "],[0,"\\n109 is"]],9219,9219,16,17],[[[0,"is prime"],[1," "],[0,"\\n113 is"]],9234,9234,16,17],[[[0,"is prime"],[1," "],[0,"\\n\",\"nam"]],9249,9249,16,17]],"time":1452912874036}
+{"patch":[[[[0,"is prime"],[1," "],[0,"\\\") \\n  "]],8681,8681,16,17]],"time":1452912870025}
+{"patch":[[[[0,"wo numbe"],[-1,"rs"],[0,".\\n\"︡{\"m"]],8353,8353,18,16]],"time":1452912826667}
+{"patch":[[[[0,"twee"],[-1,"n two numbe"],[0,".\\n\""]],8346,8346,19,8]],"time":1452912822667}
+{"patch":[[[[0,"numbers "],[-1,"betwe"],[1,"in a rang"],[0,"e.\\n\"︡{\""]],8336,8336,21,25]],"time":1452912818669}
+{"patch":[[[[0,"ers "],[-1,"in a range"],[1,"between "],[0,".\\n\""]],8340,8340,18,16]],"time":1452912814670}
+{"patch":[[[[0,"umbers b"],[-1,"etween "],[0,".\\n\"︡{\"m"]],8337,8337,23,16]],"time":1452912810670}
+{"patch":[[[[0," numbers"],[-1," b"],[0,".\\n\"︡{\"m"]],8335,8335,18,16]],"time":1452912806670}
+{"patch":[[[[0,"}]}\n\"## "],[-1,"L"],[1,"l"],[0,"oop demo"]],8283,8283,17,17]],"time":1452912798671}
+{"patch":[[[[0,"ing = 12"],[-1,"0"],[0," #end\\n\\"]],8464,8464,17,16],[[[0,"_count\":"],[-1,"10"],[1,"9"],[0,",\"output"]],8765,8765,18,17],[[[0,"ime "],[-1,"\\n23 is prime \\n29 is prime \\n31 is prime \\n37 is prime \\n41 is prime \\n43 is prime \\n47 is prime \\n53 is prime \\n59 is prime \\n61 is prime \\n67 is prime \\n71 is prime \\n73 is prime \\n79 is prime \\n83 is prime \\n89 is prime \\n97 is prime \\n101 is prime \\n103 is prime \\n107 is prime \\n109 is prime \\n113 is prime "],[0,"\\n\","]],8920,8920,321,8]],"time":1452912745675}
+{"patch":[[[[0,"g = "],[-1,"1"],[0,"2"],[1,"0"],[0," #en"]],8466,8466,10,10]],"time":1452912741669}
+{"patch":[[[[0,"_count\":"],[-1,"9"],[1,"8"],[0,",\"output"]],8765,8765,17,17]],"time":1452912734672}
+{"patch":[[[[0,"nd\\n    "],[1,"\\n    "],[0,"if count"]],8614,8614,16,22]],"time":1452912710669}
+{"patch":[[[[0,"+ fu"],[-1,"nction"],[0," wit"]],8415,8415,14,8]],"time":1452912701668}
+{"patch":[[[[0,"from c++"],[-1," fu"],[0," with so"]],8408,8408,19,16]],"time":1452912697703}
+{"patch":[[[[0,"me e"],[-1,"dits"],[0,"\\nst"]],8424,8424,12,8]],"time":1452912692667}
+{"patch":[[[[0,"c++ "],[-1,"with some e"],[0,"\\nst"]],8413,8413,19,8]],"time":1452912688665}
+{"patch":[[[[0,"from"],[-1," c++"],[0," \\ns"]],8408,8408,12,8]],"time":1452912684676}
+{"patch":[[[[0,"rint"],[-1,"ln"],[0,"(i,\\"]],8626,8626,10,8],[[[0,"_count\":"],[-1,"8"],[1,"7"],[0,",\"output"]],8741,8741,17,17],[[[0,"s prime "],[-1,"\\n"],[1,"/endl"],[0,"3 is pri"]],8797,8797,18,21],[[[0,"s prime "],[-1,"\\n"],[1,"/endl"],[0,"5 is pri"]],8813,8813,18,21],[[[0,"s prime "],[-1,"\\n"],[1,"/endl"],[0,"7 is pri"]],8829,8829,18,21],[[[0,"s prime "],[-1,"\\n"],[1,"/endl"],[0,"11 is pr"]],8845,8845,18,21],[[[0,"s prime "],[-1,"\\n"],[1,"/endl"],[0,"13 is pr"]],8862,8862,18,21],[[[0,"s prime "],[-1,"\\n"],[1,"/endl"],[0,"17 is pr"]],8879,8879,18,21],[[[0,"s prime "],[-1,"\\n"],[1,"/endl"],[0,"19 is pr"]],8896,8896,18,21],[[[0,"s prime "],[-1,"\\n"],[1,"/endl"],[0,"\",\"name\""]],8913,8913,18,21]],"time":1452912663681}
+{"patch":[[[[0,"s prime "],[1,"/endl"],[0,"\\\") \\n  "]],8637,8637,16,21]],"time":1452912650669}
+{"patch":[[[[0,"s prime "],[-1,"/endl"],[0,"\\\") \\n  "]],8637,8637,21,16],[[[0,"_count\":"],[-1,"7"],[1,"6"],[0,",\"output"]],8741,8741,17,17],[[[0,"s prime "],[-1,"/endl"],[1,"<br/>"],[0,"3 is pri"]],8797,8797,21,21],[[[0,"s prime "],[-1,"/endl"],[1,"<br/>"],[0,"5 is pri"]],8813,8813,21,21],[[[0,"s prime "],[-1,"/endl"],[1,"<br/>"],[0,"7 is pri"]],8829,8829,21,21],[[[0,"s prime "],[-1,"/endl"],[1,"<br/>"],[0,"11 is pr"]],8845,8845,21,21],[[[0,"s prime "],[-1,"/endl"],[1,"<br/>"],[0,"13 is pr"]],8862,8862,21,21],[[[0,"s prime "],[-1,"/endl"],[1,"<br/>"],[0,"17 is pr"]],8879,8879,21,21],[[[0,"s prime "],[-1,"/endl"],[1,"<br/>"],[0,"19 is pr"]],8896,8896,21,21],[[[0,"ime "],[-1,"/endl"],[1,"<br/>"],[0,"\",\"n"]],8917,8917,13,13]],"time":1452912646677}
+{"patch":[[[[0,"s prime "],[1,"<br/"],[0,"\\\") \\n  "]],8637,8637,16,20]],"time":1452912642668}
+{"patch":[[[[0,"ime <br/"],[1,">"],[0,"\\\") \\n  "]],8641,8641,16,17]],"time":1452912638675}
+{"patch":[[[[0,"ime <br/"],[-1,">"],[0,"\\\") \\n  "]],8641,8641,17,16],[[[0,"xecution_count\":"],[-1,"6"],[1,"5"],[0,",\"outputs\":[{\"ou"]],8737,8737,33,33],[[[0,"s prime "],[-1,"<br/>"],[0,"3 is pri"]],8801,8801,21,16],[[[0,"s prime "],[-1,"<br/>"],[0,"5 is pri"]],8812,8812,21,16],[[[0,"s prime "],[-1,"<br/>"],[0,"7 is pri"]],8823,8823,21,16],[[[0,"s prime "],[-1,"<br/>"],[0,"11 is pr"]],8834,8834,21,16],[[[0,"s prime "],[-1,"<br/>"],[0,"13 is pr"]],8846,8846,21,16],[[[0,"s prime "],[-1,"<br/>"],[0,"17 is pr"]],8858,8858,21,16],[[[0,"s prime "],[-1,"<br/>"],[0,"19 is pr"]],8870,8870,21,16],[[[0,"ime "],[-1,"<br/>"],[0,"\",\"n"]],8886,8886,13,8]],"time":1452912634669}
+{"patch":[[[[0,"me <"],[-1,"br/"],[0,"\\\") "]],8642,8642,11,8]],"time":1452912630666}
+{"patch":[[[[0,"s prime "],[-1,"<"],[0,"\\\") \\n  "]],8637,8637,17,16]],"time":1452912626666}
+{"patch":[[[[0,"ogic tak"],[-1,"en from "],[0,"\\nstart "]],8397,8397,24,16]],"time":1452912603670}
+{"patch":[[[[0,"ogic tak"],[1,"en from a"],[0,"\\nstart "]],8397,8397,16,25]],"time":1452912599667}
+{"patch":[[[[0,"n from a"],[1," "],[0,"\\nstart "]],8406,8406,16,17]],"time":1452912595703}
+{"patch":[[[[0,"en from "],[-1,"a "],[0,"\\nstart "]],8405,8405,18,16]],"time":1452912591743}
+{"patch":[[[[0,"c taken "],[-1,"from "],[0,"\\nstart "]],8400,8400,21,16]],"time":1452912583019}
+{"patch":[[[[0,"de l"],[-1,"ogic taken "],[1,"i"],[0,"\\nst"]],8393,8393,19,9]],"time":1452912579018}
+{"patch":[[[[0,"\"## "],[-1,"code li"],[1,"t"],[0,"\\nst"]],8387,8387,15,9]],"time":1452912575019}
+{"patch":[[[[0,"\"}\n\"## t"],[1,"aken "],[0,"\\nstart "]],8384,8384,16,21]],"time":1452912571019}
+{"patch":[[[[0,"\"}\n\""],[-1,"## taken "],[0,"\\nst"]],8384,8384,17,8]],"time":1452912567018}
+{"patch":[[[[0,"down\"}\n\""],[-1,"\\n"],[0,"start = "]],8380,8380,18,16]],"time":1452912563019}
+{"patch":[[[[0,"_count\":"],[-1,"5"],[1,"4"],[0,",\"output"]],8714,8714,17,17],[[[0,"s prime "],[1,"5.187377517639621"],[0,"\",\"name\""]],8851,8851,16,33]],"time":1452912559018}
+{"patch":[[[[0,"end\\nend"],[1,"\\n\\nprint(s)"],[0,"\"︡{\"meta"]],8628,8628,16,28]],"time":1452912555017}
+{"patch":[[[[0,"ounter ="],[-1,"="],[0," 2\\n    "]],8577,8577,17,16],[[[0,"_count\":"],[-1,"4"],[1,"3"],[0,",\"output"]],8725,8725,17,17],[[[0,"e\":\""],[-1,"stream\",\"text\":\"2 is prime 3 is prime 5 is prime 7 is prime 11 is prime 13 is prime 17 is prime 19 is prime 5.187377517639621\",\"name\":\"stdout\""],[1,"error\",\"ename\":\"LoadError\",\"evalue\":\"LoadError: syntax: unexpected \\\"=\\\"\\nwhile loading In[3], in expression starting on line 7\",\"traceback\":[\"LoadError: syntax: unexpected \\\"=\\\"\\nwhile loading In[3], in expression starting on line 7\",\"\"]"],[0,"}]}\n"]],8758,8758,150,246]],"time":1452912541693}
+{"patch":[[[[0,"f i%i2 ="],[-1,"="],[0," 0\\n    "]],8492,8492,17,16]],"time":1452912537670}
+{"patch":[[[[0,"n    end"],[1,"\\n    "],[0,"\\nend\\n\\"]],8621,8621,16,22],[[[0,"_count\":"],[-1,"3"],[1,"2"],[0,",\"output"]],8730,8730,17,17],[[[0,"e\":\""],[-1,"error\",\"ename\":\"LoadError\",\"evalue\":\"LoadError: syntax: unexpected \\\"=\\\"\\nwhile loading In[3], in expression starting on line 7\",\"traceback\":[\"LoadError: syntax: unexpected \\\"=\\\"\\nwhile loading In[3], in expression starting on line 7\",\"\"]"],[1,"stream\",\"text\":\"5.187377517639621\",\"name\":\"stdout\""],[0,"}]}\n"]],8763,8763,246,58]],"time":1452912527683}
+{"patch":[[[[0,"nd\\n    "],[1,"s += 1/i"],[0,"\\nend\\n\\"]],8627,8627,16,24]],"time":1452912523699}
+{"patch":[[[[0,"is prime"],[-1," "],[0,"\\\") \\n  "]],8607,8607,17,16]],"time":1452912517700}
+{"patch":[[[[0,",\\\" "],[-1,"is prime"],[0,"\\\") "]],8603,8603,16,8]],"time":1452912508667}
+{"patch":[[[[0,"nt(i"],[-1,",\\\" \\\""],[1," "],[0,") \\n"]],8599,8599,14,9]],"time":1452912504669}
+{"patch":[[[[0,"  print("],[-1,"i "],[0,") \\n    "]],8594,8594,18,16]],"time":1452912500667}
+{"patch":[[[[0,"rint"],[-1,"()"],[0," \\n "]],8597,8597,10,8]],"time":1452912496706}
+{"patch":[[[[0,"n       "],[-1," "],[0,"pr"],[-1,"int"],[0," \\n    e"]],8587,8587,22,18]],"time":1452912492670}
+{"patch":[[[[0,"n       "],[-1,"pr"],[0," \\n    e"]],8587,8587,18,16]],"time":1452912488706}
+{"patch":[[[[0,"      \\n    "],[-1,"end"],[1,"    "],[0,"\\n    s += 1"]],8590,8590,27,28]],"time":1452912484664}
+{"patch":[[[[0,"  \\n    "],[-1,"    \\n    "],[0,"s += 1/i"]],8594,8594,26,16]],"time":1452912480666}
+{"patch":[[[[0," 2\\n    "],[-1,"    \\n    "],[0,"s += 1/i"]],8584,8584,26,16]],"time":1452912476703}
+{"patch":[[[[0,"  if"],[-1," counter = 2"],[0,"\\n  "]],8570,8570,20,8]],"time":1452912471667}
+{"patch":[[[[0,"    "],[-1,"if\\n    "],[0,"s +="]],8568,8568,16,8]],"time":1452912467666}
+{"patch":[[[[0,"nd\\n    "],[-1,"\\n    "],[0,"s += 1/i"]],8558,8558,22,16]],"time":1452912459674}
+{"patch":[[[[0,"ounter +"],[-1," "],[0,"1 \\n    "]],8527,8527,17,16]],"time":1452912445710}
+{"patch":[[[[0,"= co"],[-1,"unter +1"],[0," \\n "]],8524,8524,16,8]],"time":1452912441669}
+{"patch":[[[[0,"        "],[-1,"  counter ="],[0," co \\n  "]],8506,8506,27,16]],"time":1452912437669}
+{"patch":[[[[0,"        "],[-1,"co"],[0," \\n     "]],8507,8507,18,16]],"time":1452912433700}
+{"patch":[[[[0,"  \\n    "],[-1,"    end\\n    "],[0,"end\\n   "]],8514,8514,29,16]],"time":1452912428664}
+{"patch":[[[[0,"    "],[-1,"        \\n    "],[0,"end\\"]],8504,8504,22,8]],"time":1452912425467}
+{"patch":[[[[0," i%i"],[-1,"2 = 0"],[0,"\\n  "]],8493,8493,13,8]],"time":1452912415664}
+{"patch":[[[[0,"   if i%"],[-1,"i"],[0,"\\n    en"]],8488,8488,17,16]],"time":1452912411699}
+{"patch":[[[[0," if "],[-1,"i%"],[0,"\\n  "]],8490,8490,10,8]],"time":1452912403664}
+{"patch":[[[[0,"     if "],[1," "],[0,"\\n    en"]],8486,8486,16,17]],"time":1452912399666}
+{"patch":[[[[0,"    "],[-1,"if  "],[0,"\\n  "]],8487,8487,12,8]],"time":1452912365699}
+{"patch":[[[[0,"    "],[-1,"end\\n    "],[0,"s +="]],8493,8493,17,8]],"time":1452912360662}
+{"patch":[[[[0,"= 1:"],[-1,"i\\n        "],[0,"\\n  "]],8476,8476,19,8]],"time":1452912356661}
+{"patch":[[[[0,"or i2 = "],[-1,"1:"],[0,"\\n    s "]],8470,8470,18,16]],"time":1452912352663}
+{"patch":[[[[0,"  for i2"],[-1," ="],[0," \\n    s"]],8467,8467,18,16]],"time":1452912348703}
+{"patch":[[[[0,"  for i2"],[-1," "],[0,"\\n    s "]],8467,8467,17,16]],"time":1452912308667}
+{"patch":[[[[0,"    "],[-1,"for i2"],[0,"\\n  "]],8465,8465,14,8]],"time":1452912304664}
+{"patch":[[[[0," 0\\n    "],[-1,"\\n    "],[0,"s += 1/i"]],8461,8461,22,16]],"time":1452912300665}
+{"patch":[[[[0,"ounter ="],[-1," 0"],[0,"\\n    s "]],8453,8453,18,16]],"time":1452912296664}
+{"patch":[[[[0,"    "],[-1,"counter ="],[0,"\\n  "]],8448,8448,17,8]],"time":1452912292665}
+{"patch":[[[[0,"ng\\n    "],[-1,"\\n    "],[0,"s += 1/i"]],8444,8444,22,16]],"time":1452912288703}
+{"patch":[[[[0," sta"],[-1,"rt:ending"],[1,"tr:n"],[0,"\\n  "]],8433,8433,17,12]],"time":1452912280665}
+{"patch":[[[[0,"i = "],[-1,"statr"],[1,"1"],[0,":n\\n"]],8430,8430,13,9]],"time":1452912276663}
+{"patch":[[[[0,"art\\nend"],[-1,"ing"],[0," = 20 #e"]],8401,8401,19,16]],"time":1452912272661}
+{"patch":[[[[0,"#start\\n"],[-1,"end"],[1,"s"],[0," = 20 #e"]],8398,8398,19,17]],"time":1452912268662}
+{"patch":[[[[0,"down\"}\n\""],[-1,"start"],[0," = 1 #st"]],8380,8380,21,16]],"time":1452912264661}
+{"patch":[[[[0,"down\"}\n\""],[1,"n"],[0," = 1 #st"]],8380,8380,16,17]],"time":1452912260661}
+{"patch":[[[[0,"rt\\ns = "],[-1,"2"],[0,"0 #end\\n"]],8398,8398,17,16]],"time":1452912244013}
+{"patch":[[[[0,"}\n\"n = 1"],[1,"00"],[0," #start\\"]],8385,8385,16,18]],"time":1452912240016}
+{"patch":[[[[0," = 0"],[-1," #end"],[0,"\\n\\n"]],8405,8405,13,8]],"time":1452912229662}
+{"patch":[[[[0,"0 #start"],[1," ending "],[0,"\\ns = 0\\"]],8394,8394,16,24]],"time":1452912225708}
+{"patch":[[[[0,"0 #s"],[-1,"tart "],[0,"endi"]],8394,8394,13,8]],"time":1452912220662}
+{"patch":[[[[0," = 100 #"],[-1,"s"],[0,"ending \\"]],8389,8389,17,16]],"time":1452912216660}
+{"patch":[[[[0,"0 #e"],[-1,"nding"],[0," \\ns"]],8394,8394,13,8],[[[0,"xecution_count\":"],[-1,"2"],[1,"1"],[0,",\"outputs\":[{\"ou"]],8522,8522,33,33],[[[0,"t\":\""],[-1,"5.187377517639621\",\"name\":\"stdout\""],[1,"\\nWARNING: deprecated syntax \\\"--\\\" at In[1]:1.\\n\",\"name\":\"stderr\"},{\"output_type\":\"error\",\"ename\":\"LoadError\",\"evalue\":\"LoadError: UndefVarError: -- not defined\\nwhile loading In[1], in expression starting on line 1\",\"traceback\":[\"LoadError: UndefVarError: -- not defined\\nwhile loading In[1], in expression starting on line 1\",\"\"]"],[0,"}]}\n"]],8579,8579,42,340]],"time":1452912205670}
+{"patch":[[[[0," = 100 #"],[1," "],[0,"e \\ns = "]],8389,8389,16,17]],"time":1452912201663}
+{"patch":[[[[0,"100 "],[-1,"# e"],[1,"--ending"],[0," \\ns"]],8392,8392,11,16]],"time":1452912197663}
+{"patch":[[[[0,"rue,\"collapsed\":"],[-1,"fals"],[1,"tru"],[0,"e},\"cell_type\":\""]],8484,8484,36,35],[[[0,"nt\":"],[-1,"1,\"outputs\":[{\"output_type\":\"stream\",\"text\":\"\\nWARNING: deprecated syntax \\\"--\\\" at In[1]:1.\\n\",\"name\":\"stderr\"},{\"output_type\":\"error\",\"ename\":\"LoadError\",\"evalue\":\"LoadError: UndefVarError: -- not defined\\nwhile loading In[1], in expression starting on line 1\",\"traceback\":[\"LoadError: UndefVarError: -- not defined\\nwhile loading In[1], in expression starting on line 1\",\"\"]}"],[1,"null,\"outputs\":["],[0,"]}\n\""]],8539,8539,386,24]],"time":1452912193677}
+{"patch":[[[[0,"0 --"],[-1,"ending "],[0,"\\ns "]],8394,8394,15,8]],"time":1452912189662}
+{"patch":[[[[0,"\"n = 100"],[-1," --"],[0,"\\ns = 0\\"]],8387,8387,19,16]],"time":1452912185671}
+{"patch":[[[[0,"\"}\n\""],[-1,"n = 100\\ns = 0\\n\\nfor i = 1:n\\n    s += 1/i\\nend\\n\\nprint(s)"],[0,"\"︡{\""]],8384,8384,68,8]],"time":1452912161661}
+{"patch":[[[[0,"n\"}\n"],[-1,"\"\"︡{\"metadata\":{\"trusted\":true,\"collapsed\":true},\"cell_type\":\"code\",\"execution_count\":null,\"outputs\":[]}\n"],[0,"\"<ce"]],8383,8383,113,8]],"time":1452912154010}
+{"patch":[[[[0,"numbers."],[-1,"\\n"],[0,"\"︡{\"meta"]],8336,8336,18,16]],"time":1452912150011}
+{"patch":[[[[0,"ime "],[-1,"numbers."],[0,"\"︡{\""]],8332,8332,16,8]],"time":1452912141660}
+{"patch":[[[[0,"n###"],[-1," Outputting prime"],[0," \"︡{"]],8314,8314,25,8]],"time":1452912137663}
+{"patch":[[[[0,":\\n\\n###"],[-1," "],[0,"\"︡{\"meta"]],8310,8310,17,16]],"time":1452912129695}
+{"patch":[[[[0,"6}]}\n\"##"],[1," A"],[0," loop de"]],8282,8282,16,18]],"time":1452911971672}
+{"patch":[[[[0,"ation:\\n"],[-1,"\\n"],[0,"###\"︡{\"m"]],8307,8307,18,16]],"time":1452911963673}
+{"patch":[[[[0,"tration:"],[-1,"\\n###"],[0,"\"︡{\"meta"]],8305,8305,21,16]],"time":1452911959671}
+{"patch":[[[[0,"emon"],[-1,"istration:"],[0,"\"︡{\""]],8299,8299,18,8]],"time":1452911955672}
+{"patch":[[[[0,"## A"],[-1," loop demon"],[0,"\"︡{\""]],8288,8288,19,8]],"time":1452911951671}
+{"patch":[[[[0,"6}]}\n\"##"],[-1," A"],[0,"\"︡{\"meta"]],8282,8282,18,16]],"time":1452911947705}
+{"patch":[[[[0,"6}]}\n\"##"],[1,"#"],[0,"\"︡{\"meta"]],8282,8282,16,17]],"time":1452911943659}
+{"patch":[[[[0,"\":6}]}\n\""],[-1,"###"],[0,"\"︡{\"meta"]],8280,8280,19,16]],"time":1452911939697}
+{"patch":[[[[0,"a\":{"],[-1,"},\"cell_type\":\"markdown\""],[1,"\"trusted\":true,\"collapsed\":true},\"cell_type\":\"code\",\"execution_count\":null,\"outputs\":[]"],[0,"}\n\"<"]],8299,8299,32,95]],"time":1452911934708}
+{"patch":[[[[0,"}]}\n"],[-1,"\"\"︡{\"metadata\":{\"trusted\":true,\"collapsed\":true},\"cell_type\":\"code\",\"execution_count\":null,\"outputs\":[]}\n"],[0,"\"<ce"]],8283,8283,113,8]],"time":1452911930713}
+{"patch":[[[[0,"/p>\\n\\n#"],[-1," "],[0,"My Submi"]],6943,6943,17,16]],"time":1452845293568}
+{"patch":[[[[0,"/p>\\n\\n#"],[1," "],[0,"My Submi"]],6943,6943,16,17]],"time":1452845289575}
+{"patch":[[[[0,"\":{},\"cell_type\":\"markdown\"}"],[1,"\n\"\"︡{\"metadata\":{\"trusted\":true,\"collapsed\":true},\"cell_type\":\"code\",\"execution_count\":null,\"outputs\":[]}"]],8473,8473,28,133]],"time":1452845059587}
+{"patch":[[[[0,"alse"],[-1,",\"scrolled\":true"],[0,"},\"c"]],8073,8073,24,8],[[[0,"wn\"}"],[-1,"\n\"\"︡{\"metadata\":{\"trusted\":true,\"collapsed\":true},\"cell_type\":\"code\",\"execution_count\":null,\"outputs\":[]}"]],8481,8481,109,4]],"time":1452845050544}
+{"patch":[[[[0,"xamples."],[-1,"_"],[0,"\\n\\n### "]],7354,7354,17,16]],"time":1452844835911}
+{"patch":[[[[0,"n\\n#### "],[-1,"_"],[0,"Note: Ma"]],7305,7305,17,16]],"time":1452844831911}
+{"patch":[[[[0,"#\\n\\n###"],[-1,"#"],[0," Note: M"]],7303,7303,17,16]],"time":1452844816923}
+{"patch":[[[[0,"### "],[-1,"Note:"],[1,"M"],[0," Mat"]],7308,7308,13,9]],"time":1452844812918}
+{"patch":[[[[0,"#\\n\\n###"],[-1," M"],[0," Matrice"]],7303,7303,18,16]],"time":1452844808922}
+{"patch":[[[[0,"ass "],[-1,"examples."],[0,"\\n\\n"]],7341,7341,17,8]],"time":1452844796914}
+{"patch":[[[[0,"rom "],[-1,"in class "],[0,"\\n\\n"]],7332,7332,17,8]],"time":1452844792914}
+{"patch":[[[[0,"es a"],[-1,"re taken from "],[0,"\\n\\n"]],7318,7318,22,8]],"time":1452844788918}
+{"patch":[[[[0,"### "],[-1,"Matrices a"],[0,"\\n\\n"]],7308,7308,18,8]],"time":1452844784914}
+{"patch":[[[[0,"ion ##\\n"],[-1,"\\n### "],[0,"\\n\\n### "]],7298,7298,22,16]],"time":1452844780915}
+{"patch":[[[[0,"n ##\\n\\n"],[-1,"\\n"],[0,"### <fon"]],7300,7300,18,16]],"time":1452844776919}
+{"patch":[[[[0,"ion ##\\n"],[1,"> "],[0,"\\n### <f"]],7298,7298,16,18]],"time":1452844688722}
+{"patch":[[[[0,"ion ##\\n"],[-1,"> "],[1,"#"],[0,"\\n### <f"]],7298,7298,18,17]],"time":1452844683919}
+{"patch":[[[[0,"ion ##\\n"],[-1,"#"],[0,"\\n### <f"]],7298,7298,17,16]],"time":1452844679911}
+{"patch":[[[[0,"ion ##\\n"],[-1,"\\n"],[0,"### <fon"]],7298,7298,18,16]],"time":1452844675911}
+{"patch":[[[[0,"down\"}\n\""],[1,"## "],[0,"A\\\\B\"︡{\""]],7957,7957,16,19],[[[0,"_count\":"],[-1,"6"],[1,"5"],[0,",\"output"]],8050,8050,17,17],[[[0,"s\":["],[-1,"{\"output_type\":\"execute_result\",\"data\":{\"text/plain\":\"3-element Array{Float64,1}:\\n  1.0\\n -3.0\\n -2.0\"},\"metadata\":{},\"execution_count\":6}"],[0,"]}\n\""]],8067,8067,147,8]],"time":1452844555531}
+{"patch":[[[[0,"wn\"}\n\"##"],[-1," "],[0,"A\\\\B\"︡{\""]],7959,7959,17,16],[[[0,"_count\":"],[-1,"5"],[1,"4"],[0,",\"output"]],8049,8049,17,17],[[[0,",\"outputs\":["],[1,"{\"output_type\":\"execute_result\",\"data\":{\"text/plain\":\"3-element Array{Float64,1}:\\n  1.0\\n -3.0\\n -2.0\"},\"metadata\":{},\"execution_count\":4}"],[0,"]}\n\"<center>"]],8058,8058,24,163]],"time":1452844551527}
+{"patch":[[[[0,"down\"}\n\""],[-1,"##"],[0,"A\\\\B\"︡{\""]],7957,7957,18,16]],"time":1452844547527}
+{"patch":[[[[0,"down\"}\n\""],[1,"\\n"],[0,"A\\\\B\"︡{\""]],7957,7957,16,18],[[[0,"_count\":"],[-1,"4"],[1,"3"],[0,",\"output"]],8049,8049,17,17],[[[0,"_count\":"],[-1,"4"],[1,"3"],[0,"}]}\n\"<ce"]],8199,8199,17,17]],"time":1452844519535}
+{"patch":[[[[0,"own\"}\n\"\\"],[1,"n\\n\\"],[0,"nA\\\\B\"︡{"]],7958,7958,16,20]],"time":1452844515532}
+{"patch":[[[[0,"\"}\n\""],[-1,"B = [-4;-2;8]"],[0,"\"︡{\""]],7740,7740,21,8],[[[0,"a\":{"],[-1,"\"trusted\":true,\"collapsed\":true},\"cell_type\":\"code\",\"execution_count\":null,\"outputs\":[]"],[1,"},\"cell_type\":\"markdown\""],[0,"}\n\"#"]],7755,7755,95,32],[[[0,"n\"}\n"],[-1,""],[0,"\"\\n"],[1,"B = [-4;-2;8]"],[0,"\\n\\n"]],7884,7884,11,24]],"time":1452844511528}
+{"patch":[[[[0," ###"],[-1,"\"︡{\"metadata\":{},\"cell_type\":\"markdown\"}\n\""],[1,"\\n"],[0,"\"︡{\""]],7698,7698,50,10]],"time":1452844507532}
+{"patch":[[[[0,"ont> ###"],[-1,"\\n"],[0,"\"︡{\"meta"]],7694,7694,18,16]],"time":1452844503535}
+{"patch":[[[[0,"\"}\n\""],[-1,"A = [1 1 1 \\n     9 3 1\\n     25 5 1]"],[0,"\"︡{\""]],7462,7462,45,8]],"time":1452844499531}
+{"patch":[[[[0,"down\"}\n\""],[1,"A = [1 1 1 \\n     9 3 1\\n     25 5 1]"],[0,"\\nB = [-"]],7802,7802,16,53]],"time":1452844495528}
+{"patch":[[[[0,"a\":{"],[-1,"\"trusted\":true,\"collapsed\":true},\"cell_type\":\"code\",\"execution_count\":null,\"outputs\":[]"],[1,"},\"cell_type\":\"markdown\""],[0,"}\n\"#"]],7477,7477,95,32]],"time":1452844491531}
+{"patch":[[[[0," ###"],[-1,"\"︡{\"metadata\":{},\"cell_type\":\"markdown\"}\n\""],[1,"\\n"],[0,"\"︡{\""]],7420,7420,50,10]],"time":1452844487527}
+{"patch":[[[[0,"ont> ###"],[-1,"\\n"],[0,"\"︡{\"meta"]],7416,7416,18,16]],"time":1452844483527}
+{"patch":[[[[0," ###"],[-1,"\"︡{\"metadata\":{},\"cell_type\":\"markdown\"}\n\""],[1,"\\n\\n"],[0,"### "]],7556,7556,50,12]],"time":1452844458531}
+{"patch":[[[[0," ###"],[-1,"\"︡{\"metadata\":{},\"cell_type\":\"markdown\"}\n\""],[1,"\\n\\n"],[0,"### "]],7420,7420,50,12]],"time":1452844452531}
+{"patch":[[[[0," 1 \\\\\\\\ "],[-1,"9"],[1,"4"],[0," & 3 & 1"]],7363,7363,17,17]],"time":1452844428531}
+{"patch":[[[[0,"_count\":"],[-1,"3"],[1,"2"],[0,",\"output"]],7767,7767,17,17],[[[0,"\\n  "],[-1,"1.0\\n -3.0\\n -2.0"],[1,"0.444444\\n  0.333333\\n -4.77778 "],[0,"\"},\""]],7869,7869,25,40],[[[0,"_count\":"],[-1,"3"],[1,"2"],[0,"}]}\n\"<ce"]],7932,7932,17,17]],"time":1452844417537}
+{"patch":[[[[0," \\n     "],[-1,"9"],[1,"4"],[0," 3 1\\n  "]],7639,7639,17,17]],"time":1452844413532}
+{"patch":[[[[0,"xecution_count\":"],[-1,"2"],[1,"1"],[0,",\"outputs\":[{\"ou"]],7759,7759,33,33],[[[0,"plain\":\""],[-1,"3"],[1,"4"],[0,"-element"]],7834,7834,17,17],[[[0,"\\n  "],[-1,"0.444444\\n  0.333333\\n -4.77778"],[1,"1.0        \\n  0.5        \\n -5.55112e-16\\n -0.5       "],[0," \"},"]],7869,7869,39,63],[[[0,"_count\":"],[-1,"2"],[1,"1"],[0,"}]}\n\"<ce"]],7956,7956,17,17]],"time":1452844344532}
+{"patch":[[[[0,"[-4;"],[-1,"-"],[0,"2;"],[-1,"8"],[1,"3"],[0,"]\\n\\"]],7672,7672,12,11]],"time":1452844340531}
+{"patch":[[[[0,"]\\nB = ["],[-1,"-4"],[0,";2;3]\\n\\"]],7665,7665,18,16]],"time":1452844336531}
+{"patch":[[[[0,"]\\nB = ["],[1,"1"],[0,";2;3]\\n\\"]],7665,7665,16,17]],"time":1452844332527}
+{"patch":[[[[0," \\n     "],[1," "],[0,"4 3 1\\n "]],7639,7639,16,17]],"time":1452844325523}
+{"patch":[[[[0," [1 1 1 "],[1,"1"],[0,"\\n      "]],7632,7632,16,17],[[[0,"    "],[-1,"25 5 1"],[1,"3.1 3.2 3.3 3.4"],[0,"]\\nB"]],7657,7657,14,23]],"time":1452844317532}
+{"patch":[[[[0,"    4 3 "],[-1,"1"],[1,"2.4"],[0,"\\n     3"]],7645,7645,17,19]],"time":1452844305523}
+{"patch":[[[[0,"      4 "],[1,"2."],[0,"3 2.4\\n "]],7643,7643,16,18]],"time":1452844299527}
+{"patch":[[[[0,"\\n      "],[-1,"4"],[1,"2.2"],[0," 2.3 2.4"]],7641,7641,17,19]],"time":1452844292531}
+{"patch":[[[[0,"1\\n     "],[1,"2.1"],[0," 2.2 2.3"]],7640,7640,16,19]],"time":1452844285527}
+{"patch":[[[[0,"= [1"],[1,"."],[0," 1"],[-1," 1 1"],[1,".2 1.3 1.4"],[0,"\\n  "]],7631,7631,14,21]],"time":1452844281524}
+{"patch":[[[[0,"\"A = [1."],[1,"1"],[0," 1.2 1.3"]],7628,7628,16,17]],"time":1452844277527}
+{"patch":[[[[0,"5 & 5 & "],[-1,"1"],[1,"3.3"],[0," \\\\end{b"]],7387,7387,17,19]],"time":1452844271602}
+{"patch":[[[[0,"\\\\\\ "],[-1,"25 & 5"],[1,"3.1 & 3.2"],[0," & 3"]],7382,7382,14,17]],"time":1452844267151}
+{"patch":[[[[0,"4 & 3 & "],[-1,"1"],[1,"2.3"],[0," \\\\\\\\ 3."]],7371,7371,17,19]],"time":1452844262844}
+{"patch":[[[[0,"\\\\\\ 4 & "],[-1,"3"],[1,"2.2"],[0," & 2.3 \\"]],7367,7367,17,19]],"time":1452844258843}
+{"patch":[[[[0," 1 \\\\\\\\ "],[-1,"4"],[1,"2.1"],[0," & 2.2 &"]],7363,7363,17,19]],"time":1452844254846}
+{"patch":[[[[0,"x} 1 & 1"],[1,".2"],[0," & 1"],[1,".3"],[0," \\\\\\\\ 2."]],7353,7353,20,24]],"time":1452844250847}
+{"patch":[[[[0,"atrix} 1"],[1,".1"],[0," & 1.2 &"]],7349,7349,16,18]],"time":1452844246843}
+{"patch":[[[[0,"\\\\\\ "],[-1,"-"],[0,"2 \\\\\\\\ "],[-1,"8"],[1,"3"],[0," \\\\e"]],7498,7498,17,16]],"time":1452844242843}
+{"patch":[[[[0,"ix} "],[-1,"-4"],[1,"1"],[0," \\\\\\"]],7490,7490,10,9]],"time":1452844238843}
+{"patch":[[[[0,"2 & 2.3 "],[1,"& 2.4 "],[0,"\\\\\\\\ 3.1"]],7385,7385,16,22],[[[0,"2 & 3.3 "],[1,"& 3.4 "],[0,"\\\\end{bm"]],7412,7412,16,22]],"time":1452844229528}
+{"patch":[[[[0,"2 & 1.3 "],[1,"& 1.4 "],[0,"\\\\\\\\ 2.1"]],7364,7364,16,22]],"time":1452844225523}
+{"patch":[[[[0,"xecution_count\":"],[-1,"1"],[1,"null"],[0,",\"outputs\":[{\"ou"]],7818,7818,33,36],[[[0,"s\":["],[-1,"{\"output_type\":\"execute_result\",\"data\":{\"text/plain\":\"4-element Array{Float64,1}:\\n  1.0        \\n  0.5        \\n -5.55112e-16\\n -0.5        \"},\"metadata\":{},\"execution_count\":1}"],[0,"]}\n\""]],7846,7846,186,8]],"time":1452844173539}
+{"patch":[[[[0,"ts\":[]}\n"],[1,"\"\"︡{\"metadata\":{\"trusted\":true,\"collapsed\":true},\"cell_type\":\"code\",\"execution_count\":null,\"outputs\":[]}\n"],[0,"\"<center"]],7845,7845,16,121]],"time":1452844117529}
+{"patch":[[[[0,"\":{},\"cell_type\":\"markdown\"}"],[1,"\n\"\"︡{\"metadata\":{\"trusted\":true,\"collapsed\":true},\"cell_type\":\"code\",\"execution_count\":null,\"outputs\":[]}"]],8144,8144,28,133]],"time":1452844041524}
+{"patch":[[[[0,"r>\\n"],[-1,"<p style=\\\"text-align:center\\\"><img src=\\\"http://www.ruslana-decor.com/assets/hatter/transparent%20scroll%20line.png\\\"/></p>"],[0,"\"︡{\""]],8004,8004,132,8]],"time":1452844031520}
+{"patch":[[[[0,"enter>\\n"],[1,"http://www.ruslana-decor.com/assets/hatter/transparent%20scroll%20line.png"],[0,"\"︡{\"meta"]],8000,8000,16,90]],"time":1452844023525}
+{"patch":[[[[0,"r>\\n"],[-1,"http://www.ruslana-decor.com/assets/hatter/transparent%20scroll%20line.png"],[0,"\"︡{\""]],8004,8004,82,8]],"time":1452844019523}
+{"patch":[[[[0,"/center>"],[-1,"\\n"],[0,"\"︡{\"meta"]],7998,7998,18,16],[[[0,"wn\"}"],[-1,"\n\"\"︡{\"metadata\":{\"trusted\":true,\"collapsed\":true},\"cell_type\":\"code\",\"execution_count\":null,\"outputs\":[]}"]],8042,8042,109,4]],"time":1452844014531}
+{"patch":[[[[0,"/></p>\\n"],[-1,"\\n"],[0,"# My Sub"]],6940,6940,18,16]],"time":1452844000526}
+{"patch":[[[[0,"c=\\\""],[-1,"http://www.ruslana-decor.com/assets/hatter/transparent%20scroll%20line.png"],[1,"..."],[0,"\\\"/>"]],6860,6860,82,11]],"time":1452843996530}
+{"patch":[[[[0,"\"}\n\""],[-1,"<p style=\\\"text-align:center\\\"><img src=\\\"...\\\"/></p>"],[0,"\\n# "]],6818,6818,61,8]],"time":1452843989524}
+{"patch":[[[[0,"down\"}\n\""],[-1,"\\n"],[0,"# My Sub"]],6814,6814,18,16]],"time":1452843953523}
+{"patch":[[[[0,"[1;2;3]\\"],[-1,"n\\"],[0,"nA\\\\B\"︡{"]],7605,7605,18,16]],"time":1452843799523}
+{"patch":[[[[0,";2;3]\\nA"],[-1,"\\\\B"],[0,"\"︡{\"meta"]],7607,7607,19,16]],"time":1452843703353}
+{"patch":[[[[0,"2;3]"],[-1,"\\nA"],[0,"\"︡{\""]],7608,7608,11,8]],"time":1452843699351}
+{"patch":[[[[0," [1;"],[-1,"2;3"],[1," "],[0,"]\"︡{"]],7604,7604,11,9]],"time":1452843695349}
+{"patch":[[[[0," = ["],[-1,"1;"],[0," ]\"︡"]],7602,7602,10,8]],"time":1452843691350}
+{"patch":[[[[0,"B = "],[-1,"[ ]"],[0,"\"︡{\""]],7601,7601,11,8]],"time":1452843687349}
+{"patch":[[[[0,"    "],[-1," 3.1 3.2 3.3 3.4]\\nB ="],[0," \"︡{"]],7578,7578,30,8]],"time":1452843683390}
+{"patch":[[[[0,"4\\n     "],[1,"3.1 3.2 3.3 3.4]\\n"],[0,"\"︡{\"meta"]],7575,7575,16,34]],"time":1452843679396}
+{"patch":[[[[0,"3.3 3.4]"],[-1,"\\n"],[0,"\"︡{\"meta"]],7591,7591,18,16]],"time":1452843671488}
+{"patch":[[[[0,".4\\n    "],[-1," "],[0,"3.1 3.2 "]],7574,7574,17,16]],"time":1452843667488}
+{"patch":[[[[0,".4\\n    "],[1," "],[0,"3.1 3.2 "]],7574,7574,16,17],[[[0,"3.3 "],[-1,"3.4]"],[0,"\"︡{\""]],7591,7591,12,8]],"time":1452843663490}
+{"patch":[[[[0,"1 3."],[-1,"2 3.3 "],[1,"1"],[0,"\"︡{\""]],7585,7585,14,9]],"time":1452843659485}
+{"patch":[[[[0,"    "],[-1,"3.1 3.1"],[0,"\"︡{\""]],7579,7579,15,8]],"time":1452843655495}
+{"patch":[[[[0,"2.3 "],[-1,"2.4\\n     "],[0,"\"︡{\""]],7569,7569,18,8]],"time":1452843651497}
+{"patch":[[[[0,"2.1 "],[-1,"2.2 2.3 "],[0,"\"︡{\""]],7561,7561,16,8]],"time":1452843647481}
+{"patch":[[[[0,".4\\n    "],[-1," 2.1 "],[0,"\"︡{\"meta"]],7552,7552,21,16]],"time":1452843643484}
+{"patch":[[[[0," 1.3 1.4"],[-1,"\\n    "],[0,"\"︡{\"meta"]],7546,7546,22,16]],"time":1452843640419}
+{"patch":[[[[0," 1.2"],[-1," 1.3 1.4"],[0,"\"︡{\""]],7542,7542,16,8]],"time":1452843635481}
+{"patch":[[[[0,"A = "],[-1,"["],[0,"1.1"],[-1," 1.2"],[0,"\"︡{\""]],7534,7534,16,11]],"time":1452843631481}
+{"patch":[[[[0,"\"}\n\"A = "],[-1,"1."],[0,"1\"︡{\"met"]],7530,7530,18,16]],"time":1452843627481}
+{"patch":[[[[0,"own\"}\n\"A"],[-1," = 1"],[0,"\"︡{\"meta"]],7527,7527,20,16]],"time":1452843623480}
+{"patch":[[[[0,"down\"}\n\""],[-1,"A"],[0,"\"︡{\"meta"]],7526,7526,17,16]],"time":1452843619515}
+{"patch":[[[[0," to be :"],[1," <"],[0,"\"︡{\"meta"]],7452,7452,16,18]],"time":1452843613489}
+{"patch":[[[[0,"o be : <"],[1,"  >"],[0,"\"︡{\"meta"]],7454,7454,16,19]],"time":1452843609527}
+{"patch":[[[[0," : <"],[-1,"  >"],[0,"\"︡{\""]],7458,7458,11,8]],"time":1452843550482}
+{"patch":[[[[0,"to be : "],[-1,"<"],[0,"\"︡{\"meta"]],7453,7453,17,16]],"time":1452843546527}
+{"patch":[[[[0,"to b"],[-1,"e : "],[0,"\"︡{\""]],7453,7453,12,8]],"time":1452843507672}
+{"patch":[[[[0,"nd A"],[-1,"\\\\B is going to b"],[0,"\"︡{\""]],7436,7436,25,8]],"time":1452843503486}
+{"patch":[[[[0,"### And "],[-1,"A"],[0,"\"︡{\"meta"]],7431,7431,17,16]],"time":1452843499480}
+{"patch":[[[[0,"\\n\\n"],[-1,"### And "],[0,"\"︡{\""]],7427,7427,16,8]],"time":1452843494514}
+{"patch":[[[[0,"t> ###\\n"],[-1,"\\n"],[0,"\"︡{\"meta"]],7421,7421,18,16]],"time":1452843490481}
+{"patch":[[[[0,"ont> ###"],[-1,"\\n"],[0,"\"︡{\"meta"]],7419,7419,18,16]],"time":1452843486484}
+{"patch":[[[[0,"d{bmatrix}$ "],[-1,"</font>"],[0," ###\"︡{\"meta"]],7404,7404,31,24]],"time":1452843476487}
+{"patch":[[[[0,"or=\\\"gre"],[-1,"y"],[1,"en"],[0,"\\\"> B = "]],7348,7348,17,18]],"time":1452843472484}
+{"patch":[[[[0,"#\\n\\n###"],[-1," <font color=\\\"green\\\">"],[0," B =  $\\"]],7330,7330,39,16]],"time":1452843468484}
+{"patch":[[[[0,"r=\\\"gree"],[-1,"n"],[0,"\\\"> A = "]],7192,7192,17,16]],"time":1452843464483}
+{"patch":[[[[0,"r=\\\""],[-1,"g"],[0,"re"],[-1,"e"],[1,"d"],[0,"\\\"> "]],7192,7192,12,11]],"time":1452843460523}
+{"patch":[[[[0,"lor=\\\"re"],[-1,"d"],[0,"\\\"> A = "]],7190,7190,17,16]],"time":1452843456480}
+{"patch":[[[[0,"color=\\\""],[-1,"r"],[1,"blu"],[0,"e\\\"> A ="]],7188,7188,17,19]],"time":1452843452481}
+{"patch":[[[[0,"atrix}$ "],[-1,"</font>"],[0," ###\\n\\n"]],7311,7311,23,16]],"time":1452843448480}
+{"patch":[[[[0," ##\\n###"],[-1," <font color=\\\"blue\\\">"],[0," A =  $\\"]],7173,7173,38,16]],"time":1452843438484}
+{"patch":[[[[0,"gnment :"],[-1," "],[0,"#\\n\\n## "]],6851,6851,17,16]],"time":1452843417480}
+{"patch":[[[[0,"gnment :"],[1," "],[0,"#\\n\\n## "]],6851,6851,16,17]],"time":1452843414194}
+{"patch":[[[[0,"ment"],[-1," :"],[0," #\\n"]],6853,6853,10,8]],"time":1452843409487}
+{"patch":[[[[0,"\":{},\"cell_type\":\"markdown\"}"],[1,"\n\"\"︡{\"metadata\":{\"trusted\":true,\"collapsed\":true},\"cell_type\":\"code\",\"execution_count\":null,\"outputs\":[]}"]],7710,7710,28,133]],"time":1452843400515}
+{"patch":[[[[0,"x}$  ###"],[1,"\\n"],[0,"\"︡{\"meta"]],7358,7358,16,18]],"time":1452843379516}
+{"patch":[[[[0,"x}$  ###"],[-1,"\\n"],[0,"\"︡{\"meta"]],7358,7358,18,16]],"time":1452843367484}
+{"patch":[[[[0,"1 \\\\\\\\ 2"],[-1," \\\\\\\\ 3"],[1,".1 & 2.2 & 2.3 & 2.4 \\\\\\\\ 3.1 & 3.2 & 3.3 & 3.4"],[0," \\\\end{b"]],7330,7330,23,63]],"time":1452843355477}
+{"patch":[[[[0,"atrix} 1"],[1,".1 & 1.2 & 1.3 & 1.4"],[0," \\\\\\\\ 2."]],7323,7323,16,36]],"time":1452843351480}
+{"patch":[[[[0,"\\n\\n### "],[-1,"B"],[1,"A"],[0," =  $\\\\b"]],7299,7299,17,17]],"time":1452843347479}
+{"patch":[[[[0,"\\n\\n"],[-1,"### A =  $\\\\begin{bmatrix} 1.1 & 1.2 & 1.3 & 1.4 \\\\\\\\ 2.1 & 2.2 & 2.3 & 2.4 \\\\\\\\ 3.1 & 3.2 & 3.3 & 3.4 \\\\end{bmatrix}$  ###"],[0,"\"︡{\""]],7299,7299,131,8]],"time":1452843343530}
+{"patch":[[[[0,"$  ###\\n"],[-1,"\\n"],[0,"\"︡{\"meta"]],7293,7293,18,16]],"time":1452843339477}
+{"patch":[[[[0,"matrix}$"],[-1,"  "],[1,"\\nA =  $\\\\begin{bmatrix} 1.1 & 1.2 & 1.3 & 1.4 \\\\\\\\ 2.1 & 2.2 & 2.3 & 2.4 \\\\\\\\ 3.1 & 3.2 & 3.3 & 3.4 \\\\end{bmatrix}$"],[0,"###\\n\"︡{"]],7286,7286,18,132]],"time":1452843335479}
+{"patch":[[[[0,"ix}$"],[-1,"\\nA =  $\\\\begin{bmatrix} 1.1 & 1.2 & 1.3 & 1.4 \\\\\\\\ 2.1 & 2.2 & 2.3 & 2.4 \\\\\\\\ 3.1 & 3.2 & 3.3 & 3.4 \\\\end{bmatrix}$"],[1,"  "],[0,"###\\"]],7290,7290,124,10]],"time":1452843331487}
+{"patch":[[[[0,"## Matri"],[-1,"ces"],[1,"x"],[0," Demonis"]],7145,7145,19,17]],"time":1452843276478}
+{"patch":[[[[0,"stration"],[1,", and "],[0," ##\\n###"]],7161,7161,16,22]],"time":1452843272478}
+{"patch":[[[[0,"on, and "],[1,"Solving "],[0," ##\\n###"]],7167,7167,16,24]],"time":1452843268516}
+{"patch":[[[[0,"nd Solvi"],[-1,"ng "],[0," ##\\n###"]],7172,7172,19,16]],"time":1452843261483}
+{"patch":[[[[0,"and "],[-1,"Solvi"],[0," ##\\"]],7171,7171,13,8]],"time":1452843257482}
+{"patch":[[[[0,"stration"],[-1,", and"],[0,"  ##\\n##"]],7161,7161,21,16]],"time":1452843253515}
+{"patch":[[[[0,"tration "],[-1," "],[0,"##\\n### "]],7162,7162,17,16]],"time":1452843249496}
+{"patch":[[[[0," ##\\n###"],[-1," A"],[0," =  $\\\\b"]],7169,7169,18,16]],"time":1452843043743}
+{"patch":[[[[0,"##\\n### "],[1,"B"],[0,"=  $\\\\be"]],7170,7170,16,17],[[[0,"$  ###\\n"],[1,"\\n"],[0,"\"︡{\"meta"]],7290,7290,16,18]],"time":1452843039737}
+{"patch":[[[[0,"$  ###\\n"],[1,"#### b"],[0,"\\n\"︡{\"me"]],7290,7290,16,22]],"time":1452843035783}
+{"patch":[[[[0,"##\\n####"],[-1," b"],[0,"\\n\"︡{\"me"]],7294,7294,18,16]],"time":1452843015733}
+{"patch":[[[[0,"##\\n"],[-1,"####"],[0,"\\n\"︡"]],7294,7294,12,8]],"time":1452843011732}
+{"patch":[[[[0,"$  ###\\n"],[-1,"\\n"],[0,"\"︡{\"meta"]],7290,7290,18,16]],"time":1452843007732}
+{"patch":[[[[0,"atrix}$ "],[1,"]"],[0," ###\\n\"︡"]],7284,7284,16,17]],"time":1452842991733}
+{"patch":[[[[0,"n### B= "],[1,"["],[0," $\\\\begi"]],7173,7173,16,17],[[[0,"4 \\\\end{"],[-1,"b"],[0,"matrix}$"]],7275,7275,17,16]],"time":1452842987733}
+{"patch":[[[[0,"\\\\begin{"],[-1,"b"],[0,"matrix} "]],7184,7184,17,16]],"time":1452842983735}
+{"patch":[[[[0,"ix}$"],[-1," ]"],[0," ###"]],7286,7286,10,8]],"time":1452842896107}
+{"patch":[[[[0,"n### B= "],[-1,"["],[1,"{"],[0," $\\\\begi"]],7173,7173,17,17]],"time":1452842892151}
+{"patch":[[[[0,"# B="],[-1," {"],[0," $\\\\"]],7176,7176,10,8]],"time":1452842888107}
+{"patch":[[[[0,"#\\n### B"],[-1,"="],[0," $\\\\begi"]],7171,7171,17,16]],"time":1452842884143}
+{"patch":[[[[0,"##\\n### "],[-1,"B"],[0," $\\\\begi"]],7170,7170,17,16]],"time":1452842880103}
+{"patch":[[[[0," ##\\n###"],[-1," "],[0," $\\\\begi"]],7169,7169,17,16]],"time":1452842872106}
+{"patch":[[[[0,"ix}$"],[-1," ###"],[0,"\\n\"︡"]],7281,7281,12,8]],"time":1452842868104}
+{"patch":[[[[0,"n ##\\n##"],[-1,"# "],[0,"$\\\\begin"]],7168,7168,18,16]],"time":1452842864106}
+{"patch":[[[[0,"ion ##\\n"],[-1,"##"],[0,"$\\\\begin"]],7166,7166,18,16]],"time":1452842860108}
+{"patch":[[[[0,"on\\n\\n##"],[1," 4X3"],[0," Matrix "]],7139,7139,16,20]],"time":1452842855832}
+{"patch":[[[[0,"## 4"],[-1,"X3"],[0," Mat"]],7145,7145,10,8]],"time":1452842762107}
+{"patch":[[[[0,"n\\n\\n## "],[-1,"4"],[0," Matrix "]],7140,7140,17,16]],"time":1452842758139}
+{"patch":[[[[0,"on\\n\\n##"],[-1," "],[0," Matrix "]],7139,7139,17,16]],"time":1452842754145}
+{"patch":[[[[0,"3.3 & 3."],[-1,"4"],[0," \\\\end{m"]],7257,7257,17,16]],"time":1452842727139}
+{"patch":[[[[0," & 3"],[-1,".3 & 3."],[0," \\\\e"]],7254,7254,15,8]],"time":1452842722132}
+{"patch":[[[[0,"3.1 "],[-1,"& 3.2 & 3"],[0," \\\\e"]],7245,7245,17,8]],"time":1452842718101}
+{"patch":[[[[0,"\\\\\\\\"],[-1," 3.1"],[0,"  \\\\"]],7240,7240,12,8]],"time":1452842714164}
+{"patch":[[[[0,".3 &"],[-1," 2.4 \\\\\\\\ "],[0," \\\\e"]],7231,7231,18,8]],"time":1452842710102}
+{"patch":[[[[0,".2 & 2.3"],[-1," &"],[0," \\\\end{m"]],7225,7225,18,16]],"time":1452842706140}
+{"patch":[[[[0,"2.2 "],[-1,"& 2.3"],[0," \\\\e"]],7224,7224,13,8]],"time":1452842702102}
+{"patch":[[[[0,"\\\\ 2"],[-1,".1"],[0," & "],[-1,"2.2 "],[1,"d"],[0," \\\\e"]],7215,7215,17,12]],"time":1452842698256}
+{"patch":[[[[0,".4 \\\\\\\\ "],[-1,"2"],[1,"c"],[0," & d \\\\e"]],7210,7210,17,17]],"time":1452842694104}
+{"patch":[[[[0,"1.3 "],[-1,"& 1.4"],[0," \\\\\\"]],7203,7203,13,8]],"time":1452842685115}
+{"patch":[[[[0," & 1"],[-1,".3 "],[0," \\\\\\"]],7200,7200,11,8]],"time":1452842681115}
+{"patch":[[[[0,"1 & 1.2 "],[-1,"& 1"],[1,"%"],[0," \\\\\\\\ c "]],7193,7193,19,17]],"time":1452842677115}
+{"patch":[[[[0,"1 & "],[-1,"1.2 %"],[1,"b"],[0," \\\\\\"]],7193,7193,13,9]],"time":1452842673131}
+{"patch":[[[[0,"atrix} 1"],[-1,".1"],[0," & b \\\\\\"]],7184,7184,18,16]],"time":1452842669110}
+{"patch":[[[[0,"matrix} "],[-1,"1"],[1,"a"],[0," & b \\\\\\"]],7183,7183,17,17]],"time":1452842665109}
+{"patch":[[[[0,"##\\n"],[-1,"$\\\\begin{matrix} a & b \\\\\\\\ c & d \\\\end{matrix}$"],[0,"\\n\"︡"]],7170,7170,56,8]],"time":1452842645101}
+{"patch":[[[[0," I liked"],[-1," ##"],[0," \\n> <fo"]],6895,6895,19,16]],"time":1452842622099}
+{"patch":[[[[0,"te t"],[-1,"hat I liked"],[0," \\n>"]],6888,6888,19,8]],"time":1452842618099}
+{"patch":[[[[0,"a quote "],[-1,"t "],[0,"\\n> <fon"]],6883,6883,18,16]],"time":1452842614099}
+{"patch":[[[[0,"th a quo"],[1,"u"],[0,"te \\n> <"]],6880,6880,16,17]],"time":1452842610137}
+{"patch":[[[[0,"a qu"],[-1,"oute "],[0,"\\n> "]],6883,6883,13,8]],"time":1452842596103}
+{"patch":[[[[0,"ith "],[-1,"a qu"],[0,"\\n> "]],6879,6879,12,8]],"time":1452842592136}
+{"patch":[[[[0,"Star"],[-1,"ting up with "],[0,"\\n> "]],6866,6866,21,8]],"time":1452842588099}
+{"patch":[[[[0,"\\n\\n"],[-1,"## Star"],[0,"\\n> "]],6859,6859,15,8]],"time":1452842584099}
+{"patch":[[[[0,"nt #\\n\\n"],[-1,"\\n"],[0,"> <font "]],6855,6855,18,16]],"time":1452842580136}
+{"patch":[[[[0,"ion ##\\n"],[-1,"\\n"],[0,"\"︡{\"meta"]],7120,7120,18,16]],"time":1452842576136}
+{"patch":[[[[0,"ration #"],[-1,"#\\n"],[0,"\"︡{\"meta"]],7117,7117,19,16]],"time":1452842560663}
+{"patch":[[[[0,"stration"],[-1," #"],[0,"\"︡{\"meta"]],7115,7115,18,16]],"time":1452842556140}
+{"patch":[[[[0,"monistra"],[-1,"tion"],[0,"\"︡{\"meta"]],7111,7111,20,16]],"time":1452842546099}
+{"patch":[[[[0,"Demo"],[-1,"nistra"],[0,"\"︡{\""]],7109,7109,14,8]],"time":1452842542136}
+{"patch":[[[[0," Mat"],[-1,"rix Demo"],[0,"\"︡{\""]],7101,7101,16,8]],"time":1452842538097}
+{"patch":[[[[0,"n\\n\\n## "],[-1,"Mat"],[0,"\"︡{\"meta"]],7094,7094,19,16]],"time":1452842534135}
+{"patch":[[[[0,"ton\\n\\n#"],[-1,"# "],[0,"\"︡{\"meta"]],7092,7092,18,16]],"time":1452842524115}
+{"patch":[[[[0,"rton\\n\\n"],[-1,"#"],[0,"\"︡{\"meta"]],7091,7091,17,16]],"time":1452842520151}
+{"patch":[[[[0,"rton\\n\\n"],[1,"\\n"],[0,"\"︡{\"meta"]],7091,7091,16,18]],"time":1452842514184}
+{"patch":[[[[0,"r=\\\""],[-1,"blue"],[1,"green"],[0,"\\\"><"]],6875,6875,12,13]],"time":1452842452098}
+{"patch":[[[[0,"r=\\\""],[-1,"green"],[1,"r"],[0,"\\\"><"]],6875,6875,13,9]],"time":1452842444098}
+{"patch":[[[[0,"olor=\\\"r"],[1,"ed"],[0,"\\\"><b> \\"]],6872,6872,16,18]],"time":1452842440108}
+{"patch":[[[[0,"]}\n\""],[-1,"<center>&copy; Abdulrahman Zaiter 2016</center>\"︡{\"metadata\":{},\"cell_type\":\"markdown\"}\n\"\"︡{\"metadata\":{\"trusted\":true,\"collapsed\":true},\"cell_type\":\"code\",\"execution_count\":null,\"outputs\":[]"],[1,"\"︡{\"metadata\":{},\"cell_type\":\"markdown\""],[0,"}"]],7381,7381,196,44]],"time":1452842228134}
+{"patch":[[[[0,"a\":{"],[-1,"},\"cell_type\":\"markdown\""],[1,"\"trusted\":true,\"collapsed\":true},\"cell_type\":\"code\",\"execution_count\":null,\"outputs\":[]"],[0,"}"]],7396,7396,29,92]],"time":1452842224097}
+{"patch":[[[[0,"on\\n\\n\\n"],[1,"<center>&copy; Abdulrahman Zaiter 2016</center>"],[0,"\"︡{\"meta"]],7092,7092,16,63]],"time":1452842220099}
+{"patch":[[[[0,"xecution_count\":"],[-1,"null"],[1,"10"],[0,",\"outputs\":[]}\n\""]],7291,7291,36,34],[[[0,"\":10,\"outputs\":["],[1,"{\"output_type\":\"error\",\"ename\":\"LoadError\",\"evalue\":\"LoadError: UndefVarError: Zaiter not defined\\nwhile loading In[10], in expression starting on line 1\",\"traceback\":[\"LoadError: UndefVarError: Zaiter not defined\\nwhile loading In[10], in expression starting on line 1\",\"\"]}"],[0,"]}\n\"\"︡{\"metadata"]],7305,7305,32,307]],"time":1452842201095}
+{"patch":[[[[0,"></font>"],[-1," "],[0,"― G.K. C"]],7068,7068,17,16]],"time":1452842104098}
+{"patch":[[[[0,"ont>"],[-1,"― G.K. Chesterton"],[0,"\\n\\n"]],7072,7072,25,8]],"time":1452842100127}
+{"patch":[[[[0,"2016"],[-1,"</center>"],[0,"\"︡{\""]],7116,7116,17,8]],"time":1452842085127}
+{"patch":[[[[0,"\\n\\n"],[-1,"<center>"],[0,"&cop"]],7078,7078,16,8]],"time":1452842081093}
+{"patch":[[[[0,"head.”</"],[1,"right></"],[0,"b></font"]],7059,7059,16,24]],"time":1452842077091}
+{"patch":[[[[0,"ed\\\"><b>"],[1,"<right>"],[0," \\\"The d"]],6880,6880,16,23]],"time":1452842073091}
+{"patch":[[[[0,"head.”</"],[-1,"right"],[1,"center"],[0,"></b></f"]],7066,7066,21,22]],"time":1452842068103}
+{"patch":[[[[0,"<b><"],[-1,"right"],[1,"center"],[0,"> \\\""]],6885,6885,13,14]],"time":1452842064127}
+{"patch":[[[[0,"er><"],[-1,"/b>"],[1," "],[0,"</fo"]],7079,7079,11,9]],"time":1452842056100}
+{"patch":[[[[0,"d.”<"],[-1,"/"],[0,"center>"],[-1,"<"],[0," </f"]],7070,7070,17,15]],"time":1452842052099}
+{"patch":[[[[0,"s head.”"],[-1,"<center>"],[0," </font>"]],7065,7065,24,16]],"time":1452842048096}
+{"patch":[[[[0,"\\\"red\\\">"],[1," "],[0,"<b><cent"]],6877,6877,16,17]],"time":1452842040095}
+{"patch":[[[[0," <b>"],[-1,"<center>"],[0," \\\"T"]],6885,6885,16,8]],"time":1452842036127}
+{"patch":[[[[0,"\"> <"],[-1,"b>"],[0," \\\"T"]],6883,6883,10,8]],"time":1452841973124}
+{"patch":[[[[0,"\\\"red\\\">"],[-1," <"],[0," \\\"The d"]],6877,6877,18,16]],"time":1452841969091}
+{"patch":[[[[0,"d.” "],[-1,"</font>"],[0,"\\n\\n"]],7059,7059,15,8]],"time":1452841961089}
+{"patch":[[[[0,"n> <"],[-1,"font color=\\\"red\\\""],[1,"#0B8E00"],[0,"> \\\""]],6862,6862,26,15]],"time":1452841956655}
+{"patch":[[[[0,"\\n> "],[-1,"<#0B8E00>"],[0," \\\"T"]],6861,6861,17,8]],"time":1452841932092}
+{"patch":[[[[0,"t #\\n\\n>"],[-1," "],[0," \\\"The d"]],6856,6856,17,16]],"time":1452841928127}
+{"patch":[[[[0,"t #\\n\\n>"],[1,"+   Red"],[0," \\\"The d"]],6856,6856,16,23]],"time":1452841841652}
+{"patch":[[[[0,"n\\n>"],[-1,"+   Red"],[0," \\\"T"]],6860,6860,15,8]],"time":1452841833135}
+{"patch":[[[[0,"nt #\\n\\n"],[-1,">"],[1,"-red"],[0," \\\"The d"]],6855,6855,17,20]],"time":1452841826124}
+{"patch":[[[[0,"nt #\\n\\n"],[1,"\\n"],[0,"-red \\\"T"]],6855,6855,16,18]],"time":1452841822096}
+{"patch":[[[[0,"nt #\\n\\n"],[-1,"\\n"],[1,"> "],[0,"-red \\\"T"]],6855,6855,18,18]],"time":1452841818099}
+{"patch":[[[[0," #\\n\\n> "],[-1,"-"],[1,"*"],[0,"red \\\"Th"]],6857,6857,17,17]],"time":1452841814098}
+{"patch":[[[[0,"#\\n\\n> *"],[-1,"red"],[0," \\\"The d"]],6858,6858,19,16]],"time":1452841810090}
+{"patch":[[[[0," #\\n\\n> "],[-1,"*"],[1,"+ "],[0," \\\"The d"]],6857,6857,17,18]],"time":1452841806090}
+{"patch":[[[[0,"t #\\n\\n>"],[-1," +"],[0,"  \\\"The "]],6856,6856,18,16]],"time":1452841802087}
+{"patch":[[[[0,"t #\\n\\n>"],[-1," "],[0," \\\"The d"]],6856,6856,17,16]],"time":1452841798089}
+{"patch":[[[[0,"s head.”"],[1," >"],[0," \\n\\n\\n&"]],7033,7033,16,18]],"time":1452841777686}
+{"patch":[[[[0,"ad.”"],[-1," >"],[0," \\n\\"]],7037,7037,10,8]],"time":1452841773091}
+{"patch":[[[[0,"s head.”"],[-1," "],[0,"\\n\\n\\n&c"]],7033,7033,17,16]],"time":1452841769092}
+{"patch":[[[[0,"\\n> "],[-1,"\\\""],[0,"The "]],6861,6861,10,8]],"time":1452841765091}
+{"patch":[[[[0,"s head.”"],[1," ##"],[0,"\\n\\n\\n&c"]],7031,7031,16,19]],"time":1452841756119}
+{"patch":[[[[0,"nt #\\n\\n"],[-1,">"],[1,"##"],[0," The dif"]],6855,6855,17,18]],"time":1452841752087}
+{"patch":[[[[0," #\\n\\n##"],[1," >"],[0," The dif"]],6857,6857,16,18]],"time":1452841748092}
+{"patch":[[[[0,"\\n\\n## >"],[-1," "],[0,"The diff"]],6859,6859,17,16]],"time":1452841742123}
+{"patch":[[[[0,"#\\n\\n## "],[-1,">"],[0,"The diff"]],6858,6858,17,16]],"time":1452841720652}
+{"patch":[[[[0,"#\\n\\n## "],[1,"“"],[0,"The diff"]],6858,6858,16,17]],"time":1452841716096}
+{"patch":[[[[0,"d.” "],[-1,"##\\n"],[0,"\\n\\n"]],7038,7038,12,8]],"time":1452841695088}
+{"patch":[[[[0,"ignment "],[-1,"#"],[0,"\\n\\n## “"]],6850,6850,17,16],[[[0,"s head.”"],[-1," "],[0,"\\n\\n&cop"]],7032,7032,17,16]],"time":1452841691088}
+{"patch":[[[[0,"signment"],[-1," "],[0,"\\n\\n## “"]],6849,6849,17,16]],"time":1452841687086}
+{"patch":[[[[0,"head.”\\n"],[-1,"\\n"],[0,"&copy; A"]],7033,7033,18,16]],"time":1452841678092}
+{"patch":[[[[0,"gnment\\n"],[-1,"\\n"],[0,"## “The "]],6851,6851,18,16]],"time":1452841673084}
+{"patch":[[[[0,"ent\\n## "],[1,"\\\""],[0,"“The dif"]],6854,6854,16,18]],"time":1452841663085}
+{"patch":[[[[0,"# \\\""],[-1,"“The difference between the poet and the mathematician is that the poet tries to get his head into the heavens while the mathematician tries to get the heavens into his head.”"],[0,"\\n&c"]],6860,6860,183,8]],"time":1452841659127}
+{"patch":[[[[0,"n## "],[-1,"\\\""],[0,"\\n&c"]],6858,6858,10,8]],"time":1452841585123}
+{"patch":[[[[0,"ent\\n## "],[1,"ma"],[0,"\\n&copy;"]],6854,6854,16,18]],"time":1452841576096}
+{"patch":[[[[0,"ent\\n## "],[-1,"ma"],[0,"\\n&copy;"]],6854,6854,18,16]],"time":1452841572131}
+{"patch":[[[[0,"ment\\n##"],[-1," "],[1,"#"],[0,"\\n&copy;"]],6853,6853,17,17]],"time":1452841561093}
+{"patch":[[[[0,"ment\\n##"],[-1,"#"],[0,"\\n&copy;"]],6853,6853,17,16]],"time":1452841557090}
+{"patch":[[[[0,"gnment\\n"],[-1,"##"],[0,"\\n&copy;"]],6851,6851,18,16]],"time":1452841553091}
+{"patch":[[[[0,"own\"}\n\"#"],[1,"#"],[0," My Subm"]],6815,6815,16,17]],"time":1452841545089}
+{"patch":[[[[0,"ter "],[-1,"2016"],[0,"\"︡{\""]],6884,6884,12,8]],"time":1452841500091}
+{"patch":[[[[0,"n Zaiter"],[-1," "],[0,"\"︡{\"meta"]],6879,6879,17,16]],"time":1452841496120}
+{"patch":[[[[0,"gnment\\n"],[-1,"\\n"],[0,"&copy; A"]],6852,6852,18,16]],"time":1452841490086}
+{"patch":[[[[0,"ahma"],[-1,"n Zaiter"],[0,"\"︡{\""]],6873,6873,16,8]],"time":1452841483083}
+{"patch":[[[[0,"opy;"],[-1," Abdulrahma"],[0,"\"︡{\""]],6862,6862,19,8]],"time":1452841479084}
+{"patch":[[[[0,"nt\\n"],[-1,"&copy;"],[0,"\"︡{\""]],6856,6856,14,8]],"time":1452841475127}
+{"patch":[[[[0,"_type\":\""],[-1,"markdown\""],[1,"code\",\"execution_count\":11,\"outputs\":[]"],[0,"}\n\"\"︡{\"m"]],6914,6914,25,55]],"time":1452841444087}
+{"patch":[[[[0,"_count\":"],[-1,"11"],[1,"2"],[0,",\"output"]],6938,6938,18,17],[[[0,"t\":2,\"outputs\":["],[1,"{\"output_type\":\"execute_result\",\"data\":{\"text/plain\":\"132\"},\"metadata\":{},\"execution_count\":2}"],[0,"]}\n\"\"︡{\"metadata"]],6943,6943,32,126]],"time":1452841433096}
+{"patch":[[[[0,"For "],[-1,"This Assignmen"],[0,"t"],[1,"h"],[0,"\\n\"︡"]],6839,6839,23,10]],"time":1452841429098}
+{"patch":[[[[0,"My S"],[-1,"ubmission For th"],[1,"b"],[0,"\\n\"︡"]],6825,6825,24,9]],"time":1452841425094}
+{"patch":[[[[0,"\"## "],[-1,"My Sb"],[0,"\\n\"︡"]],6821,6821,13,8]],"time":1452841421098}
+{"patch":[[[[0,"down\"}\n\""],[-1,"## "],[1,"x = 2\\ny = 66\\n\\nx*y"],[0,"\\n\"︡{\"me"]],6814,6814,19,36]],"time":1452841417085}
+{"patch":[[[[0,"ount\":2}]}\n\""],[1,"Zaiter&copy;"],[0,"\"︡{\"metadata"]],7029,7029,24,36]],"time":1452841388088}
+{"patch":[[[[0,"_count\":"],[-1,"10"],[1,"9"],[0,",\"output"]],7131,7131,18,17],[[[0,"or: "],[-1,"UndefVarError: Zaiter not defined"],[1,"unsupported or misplaced expression &"],[0,"\\nwh"]],7212,7212,41,45],[[[0,"hile loading In["],[-1,"10"],[1,"9"],[0,"], in expression"]],7256,7256,34,33],[[[0,"or: "],[-1,"UndefVarError: Zaiter not defined"],[1,"unsupported or misplaced expression &"],[0,"\\nwh"]],7331,7331,41,45],[[[0,"ding In["],[-1,"10"],[1,"9"],[0,"], in ex"]],7383,7383,18,17]],"time":1452841384088}
+{"patch":[[[[0,"]}\n\""],[-1,"Zaiter"],[0,"&cop"]],7037,7037,14,8]],"time":1452841380083}
+{"patch":[[[[0,"]}\n\""],[-1,"&copy;"],[0,"\"︡{\""]],7037,7037,14,8]],"time":1452841376119}
+{"patch":[[[[0,"ount\":2}]}\n\""],[1,"&copy;"],[0,"\"︡{\"metadata"]],7029,7029,24,30]],"time":1452841343082}
+{"patch":[[[[0,"_count\":"],[-1,"9"],[1,"8"],[0,",\"output"]],7125,7125,17,17],[[[0,"hile loading In["],[-1,"9"],[1,"8"],[0,"], in expression"]],7250,7250,33,33],[[[0,"ding In["],[-1,"9"],[1,"8"],[0,"], in ex"]],7377,7377,17,17]],"time":1452841339083}
+{"patch":[[[[0,"\n\"&copy;"],[1,"Abdulrahman"],[0,"\"︡{\"meta"]],7039,7039,16,27]],"time":1452841335085}
+{"patch":[[[[0,"\n\"&copy;"],[1," "],[0,"Abdulrah"]],7039,7039,16,17],[[[0,"_count\":"],[-1,"8"],[1,"7"],[0,",\"output"]],7137,7137,17,17],[[[0,"hile loading In["],[-1,"8"],[1,"7"],[0,"], in expression"]],7262,7262,33,33],[[[0,"ding In["],[-1,"8"],[1,"7"],[0,"], in ex"]],7389,7389,17,17]],"time":1452841331083}
+{"patch":[[[[0,"ulrahman"],[1," Zaiter"],[0,"\"︡{\"meta"]],7051,7051,16,23],[[[0,"_count\":"],[-1,"7"],[1,"6"],[0,",\"output"]],7144,7144,17,17],[[[0,"or: "],[-1,"unsupported or misplaced"],[1,"syntax: extra token \\\"Zaiter\\\" after end of"],[0," exp"]],7225,7225,32,51],[[[0,"nd of expression"],[-1," &"],[0,"\\nwhile loading "]],7267,7267,34,32],[[[0,"hile loading In["],[-1,"7"],[1,"6"],[0,"], in expression"]],7286,7286,33,33],[[[0,"or: "],[-1,"unsupported or misplaced"],[1,"syntax: extra token \\\"Zaiter\\\" after end of"],[0," exp"]],7361,7361,32,51],[[[0,"sion"],[-1," &"],[0,"\\nwh"]],7415,7415,10,8],[[[0,"ding In["],[-1,"7"],[1,"6"],[0,"], in ex"]],7430,7430,17,17]],"time":1452841327092}
+{"patch":[[[[0,"n Zaiter"],[1,"\\n"],[0,"\"︡{\"meta"]],7058,7058,16,18],[[[0,"_count\":"],[-1,"6"],[1,"null"],[0,",\"output"]],7146,7146,17,20],[[[0,"s\":["],[-1,"{\"output_type\":\"error\",\"ename\":\"LoadError\",\"evalue\":\"LoadError: syntax: extra token \\\"Zaiter\\\" after end of expression\\nwhile loading In[6], in expression starting on line 1\",\"traceback\":[\"LoadError: syntax: extra token \\\"Zaiter\\\" after end of expression\\nwhile loading In[6], in expression starting on line 1\",\"\"]}"],[0,"]}\n\""]],7166,7166,323,8]],"time":1452841319125}
+{"patch":[[[[0,"ulra"],[-1,"hman Zaiter\\n"],[0,"\"︡{\""]],7051,7051,21,8]],"time":1452841315085}
+{"patch":[[[[0,"opy;"],[-1," Abdulra"],[0,"\"︡{\""]],7043,7043,16,8]],"time":1452841311083}
+{"patch":[[[[0,"]}\n\""],[-1,"&copy;"],[0,"\"︡{\""]],7037,7037,14,8]],"time":1452841307083}
+{"patch":[[[[0,"_count\":"],[-1,"null,\"outputs\":["],[1,"5,\"outputs\":[{\"output_type\":\"stream\",\"text\":\"\\nWARNING: deprecated syntax \\\"{a,b, ...}\\\" at In[5]:1.\\nUse \\\"Any[a,b, ...]\\\" instead.\\n\\nWARNING: deprecated syntax \\\"{a,b, ...}\\\" at In[5]:2.\\nUse \\\"Any[a,b, ...]\\\" instead.\\n\",\"name\":\"stderr\"},{\"output_type\":\"error\",\"ename\":\"LoadError\",\"evalue\":\"LoadError: syntax: invalid identifier name \\\"...\\\"\\nwhile loading In[5], in expression starting on line 3\",\"traceback\":[\"LoadError: syntax: invalid identifier name \\\"...\\\"\\nwhile loading In[5], in expression starting on line 3\",\"\"]}"],[0,"]}\n\"\"︡{\""]],7119,7119,32,543]],"time":1452841280824}
+{"patch":[[[[0,"ount\":2}]}\n\""],[1,"\\n&copy;"],[0,"\"︡{\"metadata"]],7029,7029,24,32]],"time":1452841276805}
+{"patch":[[[[0,"\n\"\\n"],[-1,"&copy;"],[0,"\"︡{\""]],7039,7039,14,8]],"time":1452841267097}
+{"patch":[[[[0,"\":2}]}\n\""],[1,"begin{verbatim}\\nbegin{latexample}\\n  ... LaTeX code here ...\\nend{latexample}\\nend{verbatim}\\n \\nA simple demonstration of the \\\\verb|tabular| environment can be given like this:\\nbegin{latexample}[]\\nbegin{tabular}{|c|c|c|}\\n  hline\\n  multicolumn{3}{|c|}{AAA} \\n  hline\\n  123 & multicolumn{2}{c|}{456}\\n  hline\\n  BBB & CCC & DDD \\n  hline\\nend{tabular}\\nend{latexample}"],[0,"\\n\"︡{\"me"]],7033,7033,16,390]],"time":1452840960084}
+{"patch":[[[[0," hline\\n"],[1,"\\\\"],[0,"end{tabu"]],7378,7378,16,18],[[[0,"bular}\\n"],[1,"\\\\"],[0,"end{late"]],7394,7394,16,18],[[[0,"_count\":"],[-1,"5"],[1,"4"],[0,",\"output"]],7499,7499,17,17],[[[0,"e\":\""],[-1,"stream\",\"text\":\"\\nWARNING: deprecated syntax \\\"{a,b, ...}\\\" at In[5]:1.\\nUse \\\"Any[a,b, ...]\\\" instead.\\n\\nWARNING: deprecated syntax \\\"{a,b, ...}\\\" at In[5]:2.\\nUse \\\"Any[a,b, ...]\\\" instead.\\n\",\"name\":\"stderr\"},{\"output_type\":\""],[0,"erro"]],7532,7532,237,8],[[[0,"ax: "],[-1,"invalid identifier name \\\"...\\\""],[1,"\\\"\\\\\\\" is not a unary operator"],[0,"\\nwh"]],7588,7588,39,38],[[[0,"hile loading In["],[-1,"5"],[1,"4"],[0,"], in expression"]],7625,7625,33,33],[[[0,"on line "],[-1,"3"],[1,"1"],[0,"\",\"trace"]],7668,7668,17,17],[[[0,"ax: "],[-1,"invalid identifier name \\\"...\\\""],[1,"\\\"\\\\\\\" is not a unary operator"],[0,"\\nwh"]],7708,7708,39,38],[[[0,"ding In["],[-1,"5"],[1,"4"],[0,"], in ex"]],7753,7753,17,17],[[[0,"on line "],[-1,"3"],[1,"1"],[0,"\",\"\"]}]}"]],7788,7788,17,17],[[[0,":[]}"],[-1,"\n\"\"︡{\"metadata\":{\"trusted\":true,\"collapsed\":true},\"cell_type\":\"code\",\"execution_count\":null,\"outputs\":[]}"]],7906,7906,109,4]],"time":1452840954097}
+{"patch":[[[[0,"c|}{456}\\n  "],[1,"\\\\"],[0,"hline\\n  BBB"]],7338,7338,24,26],[[[0,"C & DDD "],[1,"\\\\\\\\"],[0,"\\n  "],[1,"\\\\"],[0,"hline\\n\\"]],7369,7369,20,26]],"time":1452840950081}
+{"patch":[[[[0,"|}{AAA} "],[1,"\\\\\\\\"],[0,"\\n  hlin"]],7296,7296,16,20],[[[0,"|}{456}\\"],[1,"\\\\\\\\"],[0,"n  \\\\hli"]],7343,7343,16,20]],"time":1452840946081}
+{"patch":[[[[0,"|c|c|c|}\\n  "],[1,"\\\\"],[0,"hline\\n  mul"]],7258,7258,24,26],[[[0,"line\\n  "],[1,"\\\\"],[0,"multicol"]],7273,7273,16,18],[[[0,"\\\\\\\\\\n  "],[1,"\\\\"],[0,"hline\\n "]],7308,7308,16,18],[[[0,"  123 & "],[1,"\\\\"],[0,"multicol"]],7325,7325,16,18]],"time":1452840942080}
+{"patch":[[[[0,"batim}\\n"],[1,"\\\\"],[0,"begin{la"]],7050,7050,16,18],[[[0,"re ...\\n"],[1,"\\\\"],[0,"end{late"]],7098,7098,16,18],[[[0,"ample}\\n"],[1,"\\\\"],[0,"end{verb"]],7117,7117,16,18],[[[0," this:\\n"],[1,"\\\\"],[0,"begin{la"]],7220,7220,16,18],[[[0,"ple}[]\\n"],[1,"\\\\"],[0,"begin{ta"]],7243,7243,16,18]],"time":1452840938080}
+{"patch":[[[[0,"\":2}]}\n\""],[1,"\\\\"],[0,"begin{ve"]],7033,7033,16,18]],"time":1452840934091}
+{"patch":[[[[0,"_count\":"],[-1,"4"],[1,"3"],[0,",\"output"]],7535,7535,17,17],[[[0,"hile loading In["],[-1,"4"],[1,"3"],[0,"], in expression"]],7661,7661,33,33],[[[0,"ding In["],[-1,"4"],[1,"3"],[0,"], in ex"]],7789,7789,17,17]],"time":1452840890083}
+{"patch":[[[[0,"ple}"],[-1,"\\n\"︡{\"metadata\":{\"trusted\":true,\"collapsed\":false},\"cell_type\":\"code\",\"execution_count\":3,\"outputs\":[{\"output_type\":\"error\",\"ename\":\"LoadError\",\"evalue\":\"LoadError: syntax: \\\"\\\\\\\" is not a unary operator\\nwhile loading In[3], in expression starting on line 1\",\"traceback\":[\"LoadError: syntax: \\\"\\\\\\\" is not a unary operator\\nwhile loading In[3], in expression starting on line 1\",\"\"]}]}\n\""],[0,"\"︡{\""]],7451,7451,396,8]],"time":1452840864078}
+{"patch":[[[[0,"]}\n\""],[-1,"\\\\begin{verbatim}\\n\\\\begin{latexample}\\n  ... LaTeX code here ...\\n\\\\end{latexample}\\n\\\\end{verbatim}\\n \\nA simple demonstration of the \\\\verb|tabular| environment can be given like this:\\n\\\\begin{latexample}[]\\n\\\\begin{tabular}{|c|c|c|}\\n  \\\\hline\\n  \\\\multicolumn{3}{|c|}{AAA} \\\\\\\\\\n  \\\\hline\\n  123 & \\\\multicolumn{2}{c|}{456}\\\\\\\\\\n  \\\\hline\\n  BBB & CCC & DDD \\\\\\\\\\n  \\\\hline\\n\\\\end{tabular}\\n\\\\end{latexample}"],[0,"\"︡{\""]],7037,7037,422,8]],"time":1452840860115}
+{"patch":[[[[0,"\\nx*"],[-1,"y\\n"],[1,"2"],[0,"\"︡{\""]],6837,6837,11,9],[[[0,"xecution_count\":"],[-1,"2"],[1,"1"],[0,",\"outputs\":[{\"ou"]],6912,6912,33,33],[[[0,"\":\"e"],[-1,"xecute_result\",\"data\":{\"text/plain\":\"132\"},\"metadata\":{},\"execution_count\":2"],[1,"rror\",\"ename\":\"LoadError\",\"evalue\":\"LoadError: syntax: \\\"\\\\\\\" is not a unary operator\\nwhile loading In[1], in expression starting on line 1\",\"traceback\":[\"LoadError: syntax: \\\"\\\\\\\" is not a unary operator\\nwhile loading In[1], in expression starting on line 1\",\"\"]"],[0,"}]}\n"]],6954,6954,84,273]],"time":1452840759112}
+{"patch":[[[[0,"66\\n"],[-1,"\\nx*2"],[0,"\"︡{\""]],6833,6833,13,8]],"time":1452840755075}
+{"patch":[[[[0,"\\ny = 66"],[-1,"\\n"],[0,"\"︡{\"meta"]],6827,6827,18,16]],"time":1452840751115}
+{"patch":[[[[0,"\"}\n\"x = "],[-1,"2"],[1,"1"],[0,"\\ny = 66"]],6818,6818,17,17]],"time":1452840739076}
+{"patch":[[[[0," 1\\ny = "],[-1,"6"],[0,"6\"︡{\"met"]],6825,6825,17,16]],"time":1452840735075}
+{"patch":[[[[0,"1\\ny"],[-1," = 6"],[0,"\"︡{\""]],6826,6826,12,8]],"time":1452840731075}
+{"patch":[[[[0,"x = "],[-1,"1\\ny"],[0,"\"︡{\""]],6822,6822,12,8]],"time":1452840727079}
+{"patch":[[[[0,"\"}\n\""],[-1,"x = "],[0,"\"︡{\""]],6818,6818,12,8]],"time":1452840716113}
+{"patch":[[[[0,"down\"}\n\""],[1,"\\\\documentclass[12pt]{article}\\n\\\\usepackage{lingmacros}\\n\\\\usepackage{tree-dvips}\\n\\\\begin{document}\\n\\n\\\\section*{Notes for My Paper}\\n\\nDon't forget to include examples of topicalization.\\nThey look like this:\\n\\n{\\\\small\\n\\\\enumsentence{Topicalization from sentential subject:\\\\\\\\ \\n\\\\shortex{7}{a John$_i$ [a & kltukl & [el & \\n  {\\\\bf l-}oltoir & er & ngii$_i$ & a Mary]]}\\n{ & {\\\\bf R-}clear & {\\\\sc comp} & \\n  {\\\\bf IR}.{\\\\sc 3s}-love   & P & him & }\\n{John, (it's) clear that Mary loves (him).}}\\n}\\n\\n\\\\subsection*{How to handle topicalization}\\n\\nI'll just assume a tree structure like (\\\\ex{1}).\\n\\n{\\\\small\\n\\\\enumsentence{Structure of A$'$ Projections:\\\\\\\\ [2ex]\\n\\\\begin{tabular}[t]{cccc}\\n    & \\\\node{i}{CP}\\\\\\\\ [2ex]\\n    \\\\node{ii}{Spec} &   &\\\\node{iii}{C$'$}\\\\\\\\ [2ex]\\n        &\\\\node{iv}{C} & & \\\\node{v}{SAgrP}\\n\\\\end{tabular}\\n\\\\nodeconnect{i}{ii}\\n\\\\nodeconnect{i}{iii}\\n\\\\nodeconnect{iii}{iv}\\n\\\\nodeconnect{iii}{v}\\n}\\n}\\n\\n\\\\subsection*{Mood}\\n\\nMood changes when there is a topic, as well as when\\nthere is WH-movement.  \\\\emph{Irrealis} is the mood when\\nthere is a non-subject topic or WH-phrase in Comp.\\n\\\\emph{Realis} is the mood when there is a subject topic\\nor WH-phrase.\\n\\n\\\\end{document}"],[0,"\"︡{\"meta"]],6814,6814,16,1245]],"time":1452840710077}
+{"patch":[[[[0,"rue,\"collapsed\":"],[-1,"fals"],[1,"tru"],[0,"e},\"cell_type\":\""]],8077,8077,36,35],[[[0,"xecution_count\":"],[-1,"1"],[1,"null"],[0,",\"outputs\":[{\"ou"]],8120,8120,33,36],[[[0,"s\":["],[-1,"{\"output_type\":\"error\",\"ename\":\"LoadError\",\"evalue\":\"LoadError: syntax: \\\"\\\\\\\" is not a unary operator\\nwhile loading In[1], in expression starting on line 1\",\"traceback\":[\"LoadError: syntax: \\\"\\\\\\\" is not a unary operator\\nwhile loading In[1], in expression starting on line 1\",\"\"]}"],[0,"]}\n\""]],8148,8148,291,8]],"time":1452840682139}
+{"patch":[[[[0,":[]}"],[-1,"\n\"\"︡{\"metadata\":{\"trusted\":true,\"collapsed\":true},\"cell_type\":\"code\",\"execution_count\":null,\"outputs\":[]}"]],8150,8150,109,4]],"time":1452840678119}
+{"patch":[[[[0,"\"}\n\""],[-1,"\\\\documentclass[12pt]{article}\\n\\\\usepackage{lingmacros}\\n\\\\usepackage{tree-dvips}\\n\\\\begin{document}\\n\\n\\\\section*{Notes for My Paper}\\n\\nDon't forget to include examples of topicalization.\\nThey look like this:\\n\\n{\\\\small\\n\\\\enumsentence{Topicalization from sentential subject:\\\\\\\\ \\n\\\\shortex{7}{a John$_i$ [a & kltukl & [el & \\n  {\\\\bf l-}oltoir & er & ngii$_i$ & a Mary]]}\\n{ & {\\\\bf R-}clear & {\\\\sc comp} & \\n  {\\\\bf IR}.{\\\\sc 3s}-love   & P & him & }\\n{John, (it's) clear that Mary loves (him).}}\\n}\\n\\n\\\\subsection*{How to handle topicalization}\\n\\nI'll just assume a tree structure like (\\\\ex{1}).\\n\\n{\\\\small\\n\\\\enumsentence{Structure of A$'$ Projections:\\\\\\\\ [2ex]\\n\\\\begin{tabular}[t]{cccc}\\n    & \\\\node{i}{CP}\\\\\\\\ [2ex]\\n    \\\\node{ii}{Spec} &   &\\\\node{iii}{C$'$}\\\\\\\\ [2ex]\\n        &\\\\node{iv}{C} & & \\\\node{v}{SAgrP}\\n\\\\end{tabular}\\n\\\\nodeconnect{i}{ii}\\n\\\\nodeconnect{i}{iii}\\n\\\\nodeconnect{iii}{iv}\\n\\\\nodeconnect{iii}{v}\\n}\\n}\\n\\n\\\\subsection*{Mood}\\n\\nMood changes when there is a topic, as well as when\\nthere is WH-movement.  \\\\emph{Irrealis} is the mood when\\nthere is a non-subject topic or WH-phrase in Comp.\\n\\\\emph{Realis} is the mood when there is a subject topic\\nor WH-phrase.\\n\\n\\\\end{document}"],[0,"\"︡{\""]],6818,6818,1237,8]],"time":1452840673087}
