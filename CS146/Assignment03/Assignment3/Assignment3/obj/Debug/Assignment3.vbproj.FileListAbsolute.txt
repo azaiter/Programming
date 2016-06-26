@@ -1,0 +1,12 @@
+C:\Users\azaiter\AppData\Local\Temporary Projects\Assignment3\bin\Debug\Assignment3.exe.config
+C:\Users\LongJhonSilver\Documents\Visual Studio 2015\Projects\Assignment3\Assignment3\Assignment3\bin\Debug\Assignment3.exe.config
+C:\Users\LongJhonSilver\Documents\Visual Studio 2015\Projects\Assignment3\Assignment3\Assignment3\bin\Debug\Assignment3.exe
+C:\Users\LongJhonSilver\Documents\Visual Studio 2015\Projects\Assignment3\Assignment3\Assignment3\bin\Debug\Assignment3.pdb
+C:\Users\LongJhonSilver\Documents\Visual Studio 2015\Projects\Assignment3\Assignment3\Assignment3\bin\Debug\Assignment3.xml
+C:\Users\LongJhonSilver\Documents\Visual Studio 2015\Projects\Assignment3\Assignment3\Assignment3\obj\Debug\Assignment3.vbprojResolveAssemblyReference.cache
+C:\Users\LongJhonSilver\Documents\Visual Studio 2015\Projects\Assignment3\Assignment3\Assignment3\obj\Debug\Assignment3.frmMain.resources
+C:\Users\LongJhonSilver\Documents\Visual Studio 2015\Projects\Assignment3\Assignment3\Assignment3\obj\Debug\Assignment3.Resources.resources
+C:\Users\LongJhonSilver\Documents\Visual Studio 2015\Projects\Assignment3\Assignment3\Assignment3\obj\Debug\Assignment3.vbproj.GenerateResource.Cache
+C:\Users\LongJhonSilver\Documents\Visual Studio 2015\Projects\Assignment3\Assignment3\Assignment3\obj\Debug\Assignment3.exe
+C:\Users\LongJhonSilver\Documents\Visual Studio 2015\Projects\Assignment3\Assignment3\Assignment3\obj\Debug\Assignment3.xml
+C:\Users\LongJhonSilver\Documents\Visual Studio 2015\Projects\Assignment3\Assignment3\Assignment3\obj\Debug\Assignment3.pdb

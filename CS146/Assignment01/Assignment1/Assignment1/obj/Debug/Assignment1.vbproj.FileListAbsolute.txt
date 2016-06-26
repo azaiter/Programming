@@ -1,0 +1,11 @@
+C:\Users\azaiter\AppData\Local\Temporary Projects\Assignment1\bin\Debug\Assignment1.exe.config
+C:\Users\azaiter\Documents\Visual Studio 2013\Projects\Assignment1\Assignment1\bin\Debug\Assignment1.exe.config
+C:\Users\azaiter\Documents\Visual Studio 2013\Projects\Assignment1\Assignment1\bin\Debug\Assignment1.exe
+C:\Users\azaiter\Documents\Visual Studio 2013\Projects\Assignment1\Assignment1\bin\Debug\Assignment1.pdb
+C:\Users\azaiter\Documents\Visual Studio 2013\Projects\Assignment1\Assignment1\bin\Debug\Assignment1.xml
+C:\Users\azaiter\Documents\Visual Studio 2013\Projects\Assignment1\Assignment1\obj\Debug\Assignment1.frmMain.resources
+C:\Users\azaiter\Documents\Visual Studio 2013\Projects\Assignment1\Assignment1\obj\Debug\Assignment1.Resources.resources
+C:\Users\azaiter\Documents\Visual Studio 2013\Projects\Assignment1\Assignment1\obj\Debug\Assignment1.vbproj.GenerateResource.Cache
+C:\Users\azaiter\Documents\Visual Studio 2013\Projects\Assignment1\Assignment1\obj\Debug\Assignment1.exe
+C:\Users\azaiter\Documents\Visual Studio 2013\Projects\Assignment1\Assignment1\obj\Debug\Assignment1.xml
+C:\Users\azaiter\Documents\Visual Studio 2013\Projects\Assignment1\Assignment1\obj\Debug\Assignment1.pdb
